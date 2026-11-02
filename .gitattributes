@@ -1,0 +1,5 @@
+* text=auto
+data/** -text whitespace=cr-at-eol
+figures/*.png -text
+# Preserve the exact worker saved by the original training notebook.
+tools/train_worker_v2.py -text whitespace=cr-at-eol

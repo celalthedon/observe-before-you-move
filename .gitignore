@@ -1,0 +1,15 @@
+.venv/
+.build-venv/
+.results-venv/
+.simulation-venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+build/
+dist/
+*.egg-info/
+results/generated/
+results/

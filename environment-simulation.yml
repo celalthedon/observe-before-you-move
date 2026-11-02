@@ -1,0 +1,12 @@
+name: obym-simulation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - matplotlib>=3.8
+  - pybullet=3.25
+  - pip
+  - pip:
+      - --index-url https://download.pytorch.org/whl/cpu
+      - torch>=2.2

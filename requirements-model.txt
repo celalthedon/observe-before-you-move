@@ -1,0 +1,3 @@
+-r requirements-results.txt
+numpy>=1.26
+torch>=2.2

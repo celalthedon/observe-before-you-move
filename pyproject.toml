@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "observe-before-you-move"
+version = "0.1.0"
+description = "Frozen V2 optional-observation navigation workflow and held-out evidence"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

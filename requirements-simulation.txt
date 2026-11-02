@@ -1,0 +1,2 @@
+-r requirements-model.txt
+pybullet>=3.2.5

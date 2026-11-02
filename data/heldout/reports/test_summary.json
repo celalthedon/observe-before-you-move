@@ -1,0 +1,107 @@
+{
+  "test_sha": "fa34bcbcb4a4",
+  "checkpoint_sha256": "f12ff1a51d6e54d71ad5805ba7b5b455202f51e1bd182e8c4c56307565bc984b",
+  "source_scenes": 20,
+  "variants": 80,
+  "methods": {
+    "NoView": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 41.51469649732793,
+      "completed_views": 0,
+      "mean_prediction_wall_s": 0.0
+    },
+    "FixedMinus45": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 39.63088629668157,
+      "completed_views": 80,
+      "mean_prediction_wall_s": 0.0
+    },
+    "FixedPlus45": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 40.70783434825187,
+      "completed_views": 80,
+      "mean_prediction_wall_s": 0.0
+    },
+    "HeadingRule": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 39.78404624412566,
+      "completed_views": 40,
+      "mean_prediction_wall_s": 0.0
+    },
+    "PoseOnly": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 39.78404624412566,
+      "completed_views": 40,
+      "mean_prediction_wall_s": 0.6054710824992071
+    },
+    "ValueLinear": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 39.75051517439013,
+      "completed_views": 80,
+      "mean_prediction_wall_s": 0.020611911249989134
+    },
+    "ValueCNN": {
+      "episodes": 80,
+      "safe_success": 80,
+      "mean_capped_time_s": 39.73426517439013,
+      "completed_views": 67,
+      "mean_prediction_wall_s": 0.2685113687511148
+    }
+  },
+  "cnn_paired_comparisons": {
+    "NoView": {
+      "mean_gain_s": 1.7804313229378057,
+      "ci95_s": [
+        1.4663077093322607,
+        2.1061516456946046
+      ],
+      "source_count": 20
+    },
+    "FixedMinus45": {
+      "mean_gain_s": -0.10337887770855696,
+      "ci95_s": [
+        -1.400621020139195,
+        1.1317768707549425
+      ],
+      "source_count": 20
+    },
+    "FixedPlus45": {
+      "mean_gain_s": 0.9735691738617444,
+      "ci95_s": [
+        0.8095512266120967,
+        1.1430332621820694
+      ],
+      "source_count": 20
+    },
+    "HeadingRule": {
+      "mean_gain_s": 0.04978106973553982,
+      "ci95_s": [
+        -0.03749999999999818,
+        0.18393398282430856
+      ],
+      "source_count": 20
+    },
+    "PoseOnly": {
+      "mean_gain_s": 0.04978106973553982,
+      "ci95_s": [
+        -0.03749999999999818,
+        0.18393398282430856
+      ],
+      "source_count": 20
+    },
+    "ValueLinear": {
+      "mean_gain_s": 0.016249999999999164,
+      "ci95_s": [
+        0.007499999999999574,
+        0.026249999999998597
+      ],
+      "source_count": 20
+    }
+  }
+}

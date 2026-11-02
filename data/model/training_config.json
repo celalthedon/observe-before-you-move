@@ -1,0 +1,15 @@
+{
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "epochs": 180,
+  "patience": 30,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "minimum_value_s": 0.15,
+  "loss": "MSE_standardized_signed_seconds",
+  "ridge_alpha": 10.0
+}

@@ -1,0 +1,38 @@
+{
+  "NoView": {
+    "mae_s": 1.7022648249080197,
+    "positive_mae_s": 4.20346414744854,
+    "regret_s": 1.0649428400728438,
+    "chosen_gain_s": 0.0,
+    "beneficial": 0,
+    "harmful": 0,
+    "states": 72
+  },
+  "PoseOnly": {
+    "mae_s": 1.4444261820079225,
+    "positive_mae_s": 4.272135455178927,
+    "regret_s": 0.597669906500313,
+    "chosen_gain_s": 0.46727293357253075,
+    "beneficial": 10,
+    "harmful": 6,
+    "states": 72
+  },
+  "ValueLinear": {
+    "mae_s": 1.1523561150969088,
+    "positive_mae_s": 3.006232052266167,
+    "regret_s": 0.5822934276527829,
+    "chosen_gain_s": 0.4826494124200609,
+    "beneficial": 10,
+    "harmful": 18,
+    "states": 72
+  },
+  "ValueCNN": {
+    "mae_s": 0.9850387810510175,
+    "positive_mae_s": 3.039857715134599,
+    "regret_s": 0.5100712053891685,
+    "chosen_gain_s": 0.5548716346836753,
+    "beneficial": 10,
+    "harmful": 12,
+    "states": 72
+  }
+}

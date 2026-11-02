@@ -1,0 +1,16 @@
+{
+  "pairs": 80,
+  "matching_decisions": 38,
+  "different_decision_count": 42,
+  "tie_tolerance_s": 1e-06,
+  "gain_sign": "fixed_minus_cnn_s; positive favors ValueCNN",
+  "different_decisions": {
+    "count": 42,
+    "cnn_wins": 35,
+    "ties": 0,
+    "cnn_losses": 7,
+    "mean_paired_gain_s": -0.19691214801629905
+  },
+  "all_80_mean_paired_gain_s": -0.103378877708557,
+  "published_all_80_mean_paired_gain_s": -0.10337887770855696
+}

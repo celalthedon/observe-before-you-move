@@ -1,0 +1,90 @@
+{
+  "data/dataset/manifest.json": {
+    "bytes": 138927,
+    "sha256": "1acbfac82a9fdc7cc9e90e8aec0dda6a4a12f78d54d8061b70d8636a152aa9bb"
+  },
+  "data/dataset/train.npz": {
+    "bytes": 247763,
+    "sha256": "052bb714fee57f1346efa2c8b87185bffaa065e145776e39df73272fa307654a"
+  },
+  "data/dataset/validation.npz": {
+    "bytes": 71477,
+    "sha256": "28cf125352ef9afc89abc7ed140ff041ba5c0b8e8410f5b10289f5ff2efdc773"
+  },
+  "data/heldout/heldout_decisions.json.gz": {
+    "bytes": 337045,
+    "sha256": "814e681b73a790f7db683239e55129614d6890a9dc0cd612febe86e0a4bf64b4"
+  },
+  "data/heldout/manifest.json": {
+    "bytes": 96538,
+    "sha256": "885d1f94ea5e47a5ff2682309fb0189b7927b21da40f5418a50c2ca321f39c09"
+  },
+  "data/heldout/paired_comparisons.json": {
+    "bytes": 1020,
+    "sha256": "70754068fa077caa6f8427c1bda259b01c73c2e53c10bd8003419865f4704be6"
+  },
+  "data/heldout/reports/cnn_vs_fixedminus45_decisions.csv": {
+    "bytes": 10796,
+    "sha256": "55fa894143abf8187e25093f0876165a77f16b5f1182f6c111570cadfcd27f89"
+  },
+  "data/heldout/reports/decision_analysis_summary.json": {
+    "bytes": 450,
+    "sha256": "ebf81c6971dfe2bd2e561cd482dd30d3c57dbe6dd1f8995a3bfc9bd7c35d149f"
+  },
+  "data/heldout/reports/episode_metrics.csv": {
+    "bytes": 72179,
+    "sha256": "09bb51e0cb701a5984738cdda54b1ba000b1b7a4ac6fa3fab0f5accb98c26387"
+  },
+  "data/heldout/reports/test_summary.json": {
+    "bytes": 2740,
+    "sha256": "ae2d72b623760727b2f05de194e4fd2cef4ddeaa97562392aefabc3a269f3262"
+  },
+  "data/heldout/results.json": {
+    "bytes": 927854,
+    "sha256": "b8a4fd099f3f47d2ab276c03059161e89076f9cdb99be0d8f458b31a13c217b0"
+  },
+  "data/model/ensemble.pt": {
+    "bytes": 931069,
+    "sha256": "f12ff1a51d6e54d71ad5805ba7b5b455202f51e1bd182e8c4c56307565bc984b"
+  },
+  "data/model/inference_probe.npz": {
+    "bytes": 3958,
+    "sha256": "20948a035864f03153596426c9a8dd98e98de8d0737d806d9faf7937a1e27da9"
+  },
+  "data/model/training_config.json": {
+    "bytes": 258,
+    "sha256": "009d2b7567fd37fd8253f3728c36f2becfc6638cb846df2891b3d83eec4caae0"
+  },
+  "data/model/validation_metrics.json": {
+    "bytes": 941,
+    "sha256": "3bdb6dcf64b622bf87756334ee77969ed23466c9afaa363fbe06856d13ee12bc"
+  },
+  "data/model/validation_predictions.npz": {
+    "bytes": 7821,
+    "sha256": "20330f4d9b4ce63427bcda5d68f0930e3fea12a195e199e202143bf013d6dcd4"
+  },
+  "data/traces/cnn_gain_fixedminus45_motion.json": {
+    "bytes": 466008,
+    "sha256": "b357b1dc9550c3dcfd7e01694c6d04c1ad1bfbe56857b98124ed2c13f4a29bf4"
+  },
+  "data/traces/cnn_gain_valuecnn_motion.json": {
+    "bytes": 454561,
+    "sha256": "299d8cbdb2ee1bfb7902039f7d28b80a626d6576a71668f191de2ccdca780489"
+  },
+  "data/traces/cnn_loss_fixedminus45_motion.json": {
+    "bytes": 447284,
+    "sha256": "c66aeda1ee130bda27d78700517f9c4a87c781353a19dd73ed6e3a9a6758967e"
+  },
+  "data/traces/cnn_loss_valuecnn_motion.json": {
+    "bytes": 579277,
+    "sha256": "abcbe37c0e3b3b061f8b1c76f15f29f5f2d7613ce95d273ed2d157cdf12effdc"
+  },
+  "data/traces/selected_examples.json": {
+    "bytes": 2359,
+    "sha256": "10eea88ef6f18a8c65819e04e889d07ac2ef1eebd9eba569c84ee225607c5699"
+  },
+  "data/workflow_provenance.json": {
+    "bytes": 787,
+    "sha256": "4d68c7da44aa9b78ab05fa84502dac498fccc5c2561002c2b17e7218912b63c9"
+  }
+}

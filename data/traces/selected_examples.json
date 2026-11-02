@@ -1,0 +1,75 @@
+{
+  "selection_rule": "among differing decisions, closest to median gain within each strict sign group; scene-name tie break",
+  "demos": [
+    {
+      "kind": "cnn_gain",
+      "scene": "test_layout_3009_myP_LR",
+      "gain_s": 1.1999999999999176,
+      "cnn_time_s": 36.515358928350565,
+      "fixed_time_s": 37.71535892835048,
+      "cnn_choice": null,
+      "fixed_choice": {
+        "decision_index": 0,
+        "sim_time_s": 0.09999999999999999,
+        "xy": [
+          -3.5,
+          0.0
+        ],
+        "yaw_rad": 0.0,
+        "prefix_verified": true,
+        "selected_offset_deg": -45,
+        "action": "OBSERVE",
+        "reason": "FIXED_FIRST_ELIGIBLE",
+        "selector_wall_s": 0.0013866999979654793
+      },
+      "cnn_motion": "data/traces/cnn_gain_valuecnn_motion.json",
+      "fixed_motion": "data/traces/cnn_gain_fixedminus45_motion.json",
+      "group_median_gain_s": 1.1999999999999176
+    },
+    {
+      "kind": "cnn_loss",
+      "scene": "test_layout_3001_myP_LR",
+      "gain_s": -10.907359312938247,
+      "cnn_time_s": 47.11180553784078,
+      "fixed_time_s": 36.20444622490253,
+      "cnn_choice": {
+        "decision_index": 0,
+        "sim_time_s": 0.09999999999999999,
+        "xy": [
+          -3.5,
+          0.0
+        ],
+        "yaw_rad": 0.0,
+        "prefix_verified": true,
+        "encoding_wall_s": 0.01346929999999702,
+        "prediction_wall_s": 0.024972300001536496,
+        "values_s": [
+          0.15192255259667367,
+          0.16062404501609426
+        ],
+        "best_offset_deg": 45,
+        "selected_offset_deg": 45,
+        "action": "OBSERVE",
+        "reason": "PREDICTED_NET_TIME_GAIN",
+        "selector_wall_s": 0.038494999997055857
+      },
+      "fixed_choice": {
+        "decision_index": 0,
+        "sim_time_s": 0.09999999999999999,
+        "xy": [
+          -3.5,
+          0.0
+        ],
+        "yaw_rad": 0.0,
+        "prefix_verified": true,
+        "selected_offset_deg": -45,
+        "action": "OBSERVE",
+        "reason": "FIXED_FIRST_ELIGIBLE",
+        "selector_wall_s": 0.0006431000001612119
+      },
+      "cnn_motion": "data/traces/cnn_loss_valuecnn_motion.json",
+      "fixed_motion": "data/traces/cnn_loss_fixedminus45_motion.json",
+      "group_median_gain_s": -10.907359312938247
+    }
+  ]
+}

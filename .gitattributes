@@ -3,3 +3,6 @@ data/** -text whitespace=cr-at-eol
 figures/*.png -text
 # Preserve the exact worker saved by the original training notebook.
 tools/train_worker_v2.py -text whitespace=cr-at-eol
+
+# Preserve exact source bytes extracted from the executed V3 notebook cells.
+tools/v3/provenance/*.py -text whitespace=cr-at-eol

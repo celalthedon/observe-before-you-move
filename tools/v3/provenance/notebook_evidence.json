@@ -1,0 +1,80 @@
+{
+  "notebook": "observe-before-you-move/01_day1_simulation.ipynb",
+  "notebook_sha256": "38cb57f0190fbcef27ea8468360737e0001182b449c0a1a082240395c154e969",
+  "cells": [
+    {
+      "index_zero_based": 76,
+      "id": "304e8053",
+      "execution_count": 4,
+      "source_file": "notebook_cell_76_304e8053.py",
+      "source_sha256": "70eb794e11e8597f9218ec6cc8bb7a235c484182732c92f649be94df2e43890d",
+      "embedded_variable": "collector",
+      "embedded_source_sha256": "f65a5b5ec48128a66232a68f554a152a0a56a763d22e0035f3449aadb7cf9fa6",
+      "stdout": [
+        "pybullet build time: Oct 21 2025 10:47:45",
+        "V3 | hazır=0/120 | bu batch=12",
+        "[intermediate progress omitted]",
+        "DATA | train_layout_1002_myM_RL | valid | -0.100 s / -1.200 s",
+        "PROGRESS | train | 12/96",
+        "PROGRESS | validation | 0/24",
+        "C:\\Users\\celal\\obym-github\\results\\v3-initial-dataset"
+      ],
+      "saved_errors": []
+    },
+    {
+      "index_zero_based": 77,
+      "id": "4a2553de",
+      "execution_count": 1,
+      "source_file": "notebook_cell_77_4a2553de.py",
+      "source_sha256": "4792f0dca343abcf59c2c9d0dda217e2218132bd09631b63b63b3482f09a26f8",
+      "embedded_variable": "collector",
+      "embedded_source_sha256": "f65a5b5ec48128a66232a68f554a152a0a56a763d22e0035f3449aadb7cf9fa6",
+      "stdout": [
+        "pybullet build time: Oct 21 2025 10:47:45",
+        "V3 | hazır=15/120 | bu batch=105",
+        "[intermediate progress omitted]",
+        "DATA | validation_layout_2005_myM_RL | valid | -0.100 s / -1.200 s",
+        "PROGRESS | train | 96/96",
+        "PROGRESS | validation | 24/24",
+        "C:\\Users\\celal\\obym-github\\results\\v3-initial-dataset"
+      ],
+      "saved_errors": []
+    },
+    {
+      "index_zero_based": 79,
+      "id": "3db1b240",
+      "execution_count": null,
+      "source_file": "notebook_cell_79_3db1b240.py",
+      "source_sha256": "824ee40e8e6bf2358ef331dee49b38672139c08b328204a78bb090edfecffb26",
+      "embedded_variable": "trainer",
+      "embedded_source_sha256": "9ff9609f808d3b0987a8c720e8ab18c741762064458fcbf3f7b5df7ee0d748ff",
+      "stdout": [
+        "DEVICE | cuda | train=96 | validation=24",
+        "FIT | CNN_MSE | seed=11 | epochs=60",
+        "FIT | CNN_MSE | seed=23 | epochs=60",
+        "FIT | CNN_MSE | seed=47 | epochs=60",
+        "FIT | CNN_MSE_Rank | seed=11 | epochs=60",
+        "FIT | CNN_MSE_Rank | seed=23 | epochs=60",
+        "FIT | CNN_MSE_Rank | seed=47 | epochs=60",
+        "ORACLE | gain=+4.304 s",
+        "VAL | NoView         | gain=+0.000 s | regret=4.304 s | harmful=0 | looks=0",
+        "VAL | FixedMinus45   | gain=+0.753 s | regret=3.551 s | harmful=14 | looks=24",
+        "VAL | FixedPlus45    | gain=+1.125 s | regret=3.179 s | harmful=9 | looks=24",
+        "VAL | HeadingRule    | gain=-0.038 s | regret=4.342 s | harmful=9 | looks=12",
+        "VAL | CNN_MSE        | gain=+0.653 s | regret=3.652 s | harmful=4 | looks=14",
+        "VAL | CNN_MSE_Rank   | gain=+0.653 s | regret=3.652 s | harmful=4 | looks=14",
+        "VAL | PoseRidge      | gain=+1.089 s | regret=3.216 s | harmful=12 | looks=24",
+        "VAL | MapRidge       | gain=+0.913 s | regret=3.392 s | harmful=9 | looks=19",
+        "V3 TRAIN READY | C:\\Users\\celal\\obym-github\\results\\v3-training\\20261107_014522_557567"
+      ],
+      "saved_errors": [
+        [
+          "\u001b[1;31mThe Kernel crashed while executing code in the current cell or a previous cell. \n",
+          "\u001b[1;31mPlease review the code in the cell(s) to identify a possible cause of the failure. \n",
+          "\u001b[1;31mClick <a href='https://aka.ms/vscodeJupyterKernelCrash'>here</a> for more info. \n",
+          "\u001b[1;31mView Jupyter <a href='command:jupyter.viewOutput'>log</a> for further details."
+        ]
+      ]
+    }
+  ]
+}

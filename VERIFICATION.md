@@ -1,4 +1,4 @@
-# Verification record
+# V2 verification record (historical)
 
 Verified on 2 November 2026 from the existing public checkout. The prior handoff contained one initial Git commit and uncommitted code, evidence, figures, and a draft README. Those files were reused. No stash or additional local commit was found. Original notebooks and experiment data were preserved.
 
@@ -29,4 +29,4 @@ python tools/verify_bundle.py
 python tools/reproduce_results.py --root . --output results/generated
 ```
 
-The optional model and one-case simulation checks are documented in the [README](README.md). Use the Windows Conda instructions there: launching its interpreter without activation can fail when NumPy cannot locate its runtime DLLs. New simulation output must use a fresh directory so previous output is preserved.
+The optional model and one-case simulation checks are documented in the [V2 archive guide](V2.md). Use the Windows Conda instructions there: launching its interpreter without activation can fail when NumPy cannot locate its runtime DLLs. New simulation output must use a fresh directory so previous output is preserved.

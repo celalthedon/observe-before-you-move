@@ -1,0 +1,791 @@
+pybullet build time: Oct 21 2025 10:47:45
+RUN | train_layout_1000_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=23.7s
+OBYM: GOAL | 8.722 m | 35.215 s | baxış=0 | təmas=0
+RUN | train_layout_1000_myP_LR | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 9.412 m | 34.620 s | baxış=1 | təmas=0
+RUN | train_layout_1000_myP_LR | FixedPlus45
+OBYM | addım=25 | t=14.3s
+OBYM | addım=50 | t=25.2s
+OBYM: GOAL | 8.735 m | 37.137 s | baxış=1 | təmas=0
+TRAIN PARITY PASS | 3 archived branches and encoded inputs
+FINAL TEST | complete=0/80 | batch=80 | limit=60 min
+RUN | v3_test_layout_4000_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=27.4s
+OBYM | addım=75 | t=38.8s
+OBYM: GOAL | 10.202 m | 39.215 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4000_myP_LR | FixedMinus45
+OBYM | addım=25 | t=13.4s
+OBYM | addım=50 | t=24.8s
+OBYM: GOAL | 9.129 m | 35.513 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4000_myP_LR | FixedPlus45
+OBYM | addım=25 | t=12.7s
+OBYM | addım=50 | t=23.9s
+OBYM: GOAL | 9.707 m | 34.769 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4000_myP_LR | completed=1/80
+RUN | v3_test_layout_4000_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=24.3s
+OBYM: GOAL | 9.666 m | 38.865 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4000_myP_RL | FixedMinus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=23.9s
+OBYM | addım=75 | t=39.0s
+OBYM: GOAL | 9.666 m | 38.965 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4000_myP_RL | FixedPlus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=24.9s
+OBYM: GOAL | 9.042 m | 34.504 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4000_myP_RL | completed=2/80
+RUN | v3_test_layout_4000_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 9.205 m | 36.822 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4000_myM_LR | FixedMinus45
+OBYM | addım=25 | t=13.4s
+OBYM | addım=50 | t=27.0s
+OBYM | addım=75 | t=38.4s
+OBYM: GOAL | 9.836 m | 38.381 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4000_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.7s
+OBYM | addım=50 | t=24.3s
+OBYM: GOAL | 9.042 m | 35.604 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4000_myM_LR | completed=3/80
+RUN | v3_test_layout_4000_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.1s
+OBYM | addım=50 | t=24.1s
+OBYM: GOAL | 9.042 m | 33.204 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4000_myM_RL | FixedMinus45
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=23.7s
+OBYM: GOAL | 9.042 m | 33.304 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4000_myM_RL | FixedPlus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=23.9s
+OBYM | addım=75 | t=40.2s
+OBYM: GOAL | 9.666 m | 40.165 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4000_myM_RL | completed=4/80
+RUN | v3_test_layout_4001_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.8s
+OBYM | addım=50 | t=23.3s
+OBYM: GOAL | 8.915 m | 34.897 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4001_myP_LR | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=25.1s
+OBYM: GOAL | 9.295 m | 34.128 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4001_myP_LR | FixedPlus45
+OBYM | addım=25 | t=14.1s
+OBYM | addım=50 | t=23.7s
+OBYM: GOAL | 8.928 m | 35.619 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4001_myP_LR | completed=5/80
+RUN | v3_test_layout_4001_myP_RL | NoView
+OBYM | addım=25 | t=15.1s
+OBYM | addım=50 | t=24.8s
+OBYM: GOAL | 8.932 m | 38.921 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4001_myP_RL | FixedMinus45
+OBYM | addım=25 | t=15.1s
+OBYM | addım=50 | t=24.8s
+OBYM: GOAL | 8.932 m | 38.921 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4001_myP_RL | FixedPlus45
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=24.2s
+OBYM: GOAL | 9.207 m | 33.719 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4001_myP_RL | completed=6/80
+RUN | v3_test_layout_4001_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=27.4s
+OBYM: GOAL | 9.453 m | 37.443 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4001_myM_LR | FixedMinus45
+OBYM | addım=25 | t=15.8s
+OBYM | addım=50 | t=25.3s
+OBYM: GOAL | 8.956 m | 38.501 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4001_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=24.5s
+OBYM: GOAL | 9.207 m | 33.619 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4001_myM_LR | completed=7/80
+RUN | v3_test_layout_4001_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=24.5s
+OBYM: GOAL | 9.207 m | 33.619 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4001_myM_RL | FixedMinus45
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=24.2s
+OBYM: GOAL | 9.207 m | 33.719 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4001_myM_RL | FixedPlus45
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=25.3s
+OBYM: GOAL | 9.010 m | 38.326 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4001_myM_RL | completed=8/80
+RUN | v3_test_layout_4002_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=25.1s
+OBYM | addım=75 | t=33.9s
+OBYM | addım=100 | t=47.2s
+OBYM | addım=125 | t=59.1s
+OBYM: GOAL | 15.261 m | 60.461 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4002_myP_LR | FixedMinus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=26.7s
+OBYM | addım=75 | t=38.1s
+OBYM: GOAL | 9.712 m | 38.070 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4002_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=24.6s
+OBYM | addım=75 | t=33.4s
+OBYM | addım=100 | t=47.5s
+OBYM | addım=125 | t=58.8s
+OBYM: GOAL | 15.097 m | 59.244 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4002_myP_LR | completed=9/80
+RUN | v3_test_layout_4002_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.3s
+OBYM | addım=50 | t=24.9s
+OBYM | addım=75 | t=37.6s
+OBYM: GOAL | 10.659 m | 47.347 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4002_myP_RL | FixedMinus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=24.6s
+OBYM | addım=75 | t=37.2s
+OBYM: GOAL | 10.659 m | 47.447 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4002_myP_RL | FixedPlus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=22.7s
+OBYM: GOAL | 9.525 m | 38.512 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4002_myP_RL | completed=10/80
+RUN | v3_test_layout_4002_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=26.7s
+OBYM | addım=75 | t=38.0s
+OBYM: GOAL | 9.912 m | 38.490 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4002_myM_LR | FixedMinus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=25.3s
+OBYM | addım=75 | t=34.0s
+OBYM | addım=100 | t=48.0s
+OBYM | addım=125 | t=59.3s
+OBYM: GOAL | 15.143 m | 60.249 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4002_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.5s
+OBYM | addım=50 | t=23.6s
+OBYM: GOAL | 9.583 m | 34.458 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4002_myM_LR | completed=11/80
+RUN | v3_test_layout_4002_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=23.1s
+OBYM: GOAL | 9.525 m | 37.212 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4002_myM_RL | FixedMinus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=22.7s
+OBYM: GOAL | 9.525 m | 37.312 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4002_myM_RL | FixedPlus45
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 9.525 m | 38.412 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4002_myM_RL | completed=12/80
+RUN | v3_test_layout_4003_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.9s
+OBYM | addım=50 | t=25.0s
+OBYM: GOAL | 8.781 m | 39.061 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4003_myP_LR | FixedMinus45
+OBYM | addım=25 | t=14.1s
+OBYM | addım=50 | t=25.8s
+OBYM: GOAL | 8.781 m | 40.261 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4003_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=24.3s
+OBYM: GOAL | 8.735 m | 38.337 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4003_myP_LR | completed=13/80
+RUN | v3_test_layout_4003_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.7s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 8.735 m | 32.337 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4003_myP_RL | FixedMinus45
+OBYM | addım=25 | t=12.3s
+OBYM | addım=50 | t=23.4s
+OBYM: GOAL | 8.735 m | 32.437 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4003_myP_RL | FixedPlus45
+OBYM | addım=25 | t=13.4s
+OBYM | addım=50 | t=24.5s
+OBYM: GOAL | 8.693 m | 33.533 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4003_myP_RL | completed=14/80
+RUN | v3_test_layout_4003_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=23.9s
+OBYM: GOAL | 8.639 m | 38.608 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4003_myM_LR | FixedMinus45
+OBYM | addım=25 | t=13.6s
+OBYM | addım=50 | t=24.7s
+OBYM: GOAL | 8.639 m | 39.808 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4003_myM_LR | FixedPlus45
+OBYM | addım=25 | t=14.3s
+OBYM | addım=50 | t=25.4s
+OBYM: GOAL | 8.652 m | 40.530 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4003_myM_LR | completed=15/80
+RUN | v3_test_layout_4003_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.6s
+OBYM | addım=50 | t=23.7s
+OBYM: GOAL | 8.652 m | 33.330 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4003_myM_RL | FixedMinus45
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=23.3s
+OBYM: GOAL | 8.652 m | 33.430 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4003_myM_RL | FixedPlus45
+OBYM | addım=25 | t=13.5s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 8.776 m | 33.740 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4003_myM_RL | completed=16/80
+RUN | v3_test_layout_4004_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=22.3s
+OBYM | addım=75 | t=40.3s
+OBYM: GOAL | 9.432 m | 41.590 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4004_myP_LR | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.5s
+OBYM | addım=75 | t=38.6s
+OBYM: GOAL | 9.671 m | 38.567 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4004_myP_LR | FixedPlus45
+OBYM | addım=25 | t=14.3s
+OBYM | addım=50 | t=23.9s
+OBYM | addım=75 | t=41.2s
+OBYM: GOAL | 9.445 m | 43.512 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4004_myP_LR | completed=17/80
+RUN | v3_test_layout_4004_myP_RL | NoView
+OBYM | addım=25 | t=16.0s
+OBYM | addım=50 | t=24.8s
+OBYM | addım=75 | t=37.0s
+OBYM: GOAL | 9.391 m | 39.367 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4004_myP_RL | FixedMinus45
+OBYM | addım=25 | t=16.0s
+OBYM | addım=50 | t=24.8s
+OBYM | addım=75 | t=37.0s
+OBYM: GOAL | 9.391 m | 39.367 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4004_myP_RL | FixedPlus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=23.4s
+OBYM | addım=75 | t=36.4s
+OBYM: GOAL | 9.583 m | 36.358 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4004_myP_RL | completed=18/80
+RUN | v3_test_layout_4004_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=24.3s
+OBYM | addım=75 | t=37.2s
+OBYM: GOAL | 9.788 m | 37.579 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4004_myM_LR | FixedMinus45
+OBYM | addım=25 | t=14.8s
+OBYM | addım=50 | t=24.3s
+OBYM | addım=75 | t=42.2s
+OBYM: GOAL | 9.474 m | 45.194 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4004_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=24.0s
+OBYM: GOAL | 9.625 m | 36.362 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4004_myM_LR | completed=19/80
+RUN | v3_test_layout_4004_myM_RL | NoView
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.7s
+OBYM: GOAL | 9.571 m | 37.017 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4004_myM_RL | FixedMinus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.7s
+OBYM: GOAL | 9.571 m | 37.017 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4004_myM_RL | FixedPlus45
+OBYM | addım=25 | t=12.0s
+OBYM | addım=50 | t=24.6s
+OBYM | addım=75 | t=36.2s
+OBYM: GOAL | 9.776 m | 38.440 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4004_myM_RL | completed=20/80
+RUN | v3_test_layout_4005_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=25.4s
+OBYM | addım=75 | t=34.2s
+OBYM | addım=100 | t=48.0s
+OBYM: GOAL | 13.888 m | 56.629 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4005_myP_LR | FixedMinus45
+OBYM | addım=25 | t=14.7s
+OBYM | addım=50 | t=25.3s
+OBYM: GOAL | 8.722 m | 33.915 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4005_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=24.8s
+OBYM | addım=75 | t=34.3s
+OBYM | addım=100 | t=47.5s
+OBYM: GOAL | 13.783 m | 55.658 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4005_myP_LR | completed=21/80
+RUN | v3_test_layout_4005_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=25.4s
+OBYM | addım=75 | t=38.3s
+OBYM: GOAL | 9.345 m | 39.562 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4005_myP_RL | FixedMinus45
+OBYM | addım=25 | t=12.5s
+OBYM | addım=50 | t=25.2s
+OBYM | addım=75 | t=37.3s
+OBYM: GOAL | 9.345 m | 39.662 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4005_myP_RL | FixedPlus45
+OBYM | addım=25 | t=14.4s
+OBYM | addım=50 | t=25.6s
+OBYM: GOAL | 8.752 m | 36.180 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4005_myP_RL | completed=22/80
+RUN | v3_test_layout_4005_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.9s
+OBYM | addım=50 | t=24.5s
+OBYM: GOAL | 8.639 m | 33.808 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4005_myM_LR | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.4s
+OBYM | addım=75 | t=33.8s
+OBYM | addım=100 | t=47.0s
+OBYM: GOAL | 13.729 m | 56.313 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4005_myM_LR | FixedPlus45
+OBYM | addım=25 | t=14.1s
+OBYM | addım=50 | t=25.8s
+OBYM: GOAL | 8.710 m | 35.976 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4005_myM_LR | completed=23/80
+RUN | v3_test_layout_4005_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.7s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 8.652 m | 34.530 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4005_myM_RL | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=23.4s
+OBYM: GOAL | 8.652 m | 34.630 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4005_myM_RL | FixedPlus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=24.5s
+OBYM: GOAL | 8.652 m | 35.730 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4005_myM_RL | completed=24/80
+RUN | v3_test_layout_4006_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=24.8s
+OBYM: GOAL | 8.863 m | 35.668 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4006_myP_LR | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 9.412 m | 34.620 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4006_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=24.1s
+OBYM: GOAL | 8.818 m | 34.944 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4006_myP_LR | completed=25/80
+RUN | v3_test_layout_4006_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.1s
+OBYM | addım=50 | t=24.0s
+OBYM: GOAL | 8.818 m | 32.544 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4006_myP_RL | FixedMinus45
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=23.6s
+OBYM: GOAL | 8.818 m | 32.644 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4006_myP_RL | FixedPlus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 9.325 m | 35.412 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4006_myP_RL | completed=26/80
+RUN | v3_test_layout_4006_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=24.4s
+OBYM: GOAL | 9.529 m | 34.833 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4006_myM_LR | FixedMinus45
+OBYM | addım=25 | t=13.7s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 8.888 m | 34.329 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4006_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=24.1s
+OBYM: GOAL | 9.366 m | 33.615 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4006_myM_LR | completed=27/80
+RUN | v3_test_layout_4006_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=24.2s
+OBYM: GOAL | 9.325 m | 34.112 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4006_myM_RL | FixedMinus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 9.325 m | 34.212 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4006_myM_RL | FixedPlus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=24.8s
+OBYM: GOAL | 8.859 m | 33.947 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4006_myM_RL | completed=28/80
+RUN | v3_test_layout_4007_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=14.9s
+OBYM | addım=50 | t=24.7s
+OBYM | addım=75 | t=42.7s
+OBYM: GOAL | 9.432 m | 43.990 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4007_myP_LR | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=25.0s
+OBYM | addım=75 | t=41.2s
+OBYM: GOAL | 9.753 m | 41.174 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4007_myP_LR | FixedPlus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=23.9s
+OBYM | addım=75 | t=41.2s
+OBYM: GOAL | 9.445 m | 43.512 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4007_myP_LR | completed=29/80
+RUN | v3_test_layout_4007_myP_RL | NoView
+OBYM | addım=25 | t=16.0s
+OBYM | addım=50 | t=26.8s
+OBYM | addım=75 | t=40.8s
+OBYM: GOAL | 9.474 m | 43.174 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4007_myP_RL | FixedMinus45
+OBYM | addım=25 | t=16.0s
+OBYM | addım=50 | t=26.8s
+OBYM | addım=75 | t=40.8s
+OBYM: GOAL | 9.474 m | 43.174 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4007_myP_RL | FixedPlus45
+OBYM | addım=25 | t=12.4s
+OBYM | addım=50 | t=26.2s
+OBYM | addım=75 | t=37.6s
+OBYM: GOAL | 9.832 m | 37.579 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4007_myP_RL | completed=30/80
+RUN | v3_test_layout_4007_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=24.7s
+OBYM | addım=75 | t=39.8s
+OBYM: GOAL | 9.871 m | 40.186 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4007_myM_LR | FixedMinus45
+OBYM | addım=25 | t=15.7s
+OBYM | addım=50 | t=26.8s
+OBYM | addım=75 | t=45.2s
+OBYM: GOAL | 9.615 m | 49.247 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4007_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.2s
+OBYM | addım=50 | t=23.2s
+OBYM: GOAL | 9.707 m | 37.769 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4007_myM_LR | completed=31/80
+RUN | v3_test_layout_4007_myM_RL | NoView
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.7s
+OBYM: GOAL | 9.653 m | 36.624 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4007_myM_RL | FixedMinus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.7s
+OBYM: GOAL | 9.653 m | 36.624 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4007_myM_RL | FixedPlus45
+OBYM | addım=25 | t=14.7s
+OBYM | addım=50 | t=26.5s
+OBYM | addım=75 | t=37.8s
+OBYM: GOAL | 9.653 m | 37.824 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4007_myM_RL | completed=32/80
+RUN | v3_test_layout_4008_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=25.6s
+OBYM | addım=75 | t=34.4s
+OBYM | addım=100 | t=48.1s
+OBYM: GOAL | 14.678 m | 58.504 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4008_myP_LR | FixedMinus45
+OBYM | addım=25 | t=14.8s
+OBYM | addım=50 | t=25.8s
+OBYM: GOAL | 8.971 m | 33.936 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4008_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=26.1s
+OBYM | addım=75 | t=34.9s
+OBYM | addım=100 | t=48.5s
+OBYM: GOAL | 14.632 m | 58.979 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4008_myP_LR | completed=33/80
+RUN | v3_test_layout_4008_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.4s
+OBYM | addım=50 | t=25.8s
+OBYM | addım=75 | t=37.7s
+OBYM: GOAL | 9.735 m | 39.437 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4008_myP_RL | FixedMinus45
+OBYM | addım=25 | t=12.0s
+OBYM | addım=50 | t=25.6s
+OBYM | addım=75 | t=37.3s
+OBYM: GOAL | 9.735 m | 39.537 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4008_myP_RL | FixedPlus45
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=23.9s
+OBYM: GOAL | 8.942 m | 32.954 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4008_myP_RL | completed=34/80
+RUN | v3_test_layout_4008_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 8.888 m | 32.029 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4008_myM_LR | FixedMinus45
+OBYM | addım=25 | t=13.6s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 8.888 m | 33.229 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4008_myM_LR | FixedPlus45
+OBYM | addım=25 | t=14.3s
+OBYM | addım=50 | t=25.3s
+OBYM: GOAL | 8.900 m | 33.951 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4008_myM_LR | completed=35/80
+RUN | v3_test_layout_4008_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=24.3s
+OBYM: GOAL | 8.900 m | 33.951 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4008_myM_RL | FixedMinus45
+OBYM | addım=25 | t=13.0s
+OBYM | addım=50 | t=23.9s
+OBYM: GOAL | 8.900 m | 34.051 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4008_myM_RL | FixedPlus45
+OBYM | addım=25 | t=14.1s
+OBYM | addım=50 | t=25.0s
+OBYM: GOAL | 8.900 m | 35.151 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4008_myM_RL | completed=36/80
+RUN | v3_test_layout_4009_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.1s
+OBYM | addım=50 | t=24.7s
+OBYM: GOAL | 8.981 m | 38.561 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4009_myP_LR | FixedMinus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.0s
+OBYM: GOAL | 8.905 m | 38.453 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4009_myP_LR | FixedPlus45
+OBYM | addım=25 | t=14.4s
+OBYM | addım=50 | t=25.4s
+OBYM: GOAL | 8.876 m | 38.790 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4009_myP_LR | completed=37/80
+RUN | v3_test_layout_4009_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 8.818 m | 31.944 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4009_myP_RL | FixedMinus45
+OBYM | addım=25 | t=12.4s
+OBYM | addım=50 | t=23.4s
+OBYM: GOAL | 8.818 m | 32.044 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4009_myP_RL | FixedPlus45
+OBYM | addım=25 | t=13.6s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 8.818 m | 33.244 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4009_myP_RL | completed=38/80
+RUN | v3_test_layout_4009_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.1s
+OBYM | addım=50 | t=24.7s
+OBYM: GOAL | 8.981 m | 38.561 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4009_myM_LR | FixedMinus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.0s
+OBYM: GOAL | 8.905 m | 38.453 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4009_myM_LR | FixedPlus45
+OBYM | addım=25 | t=12.7s
+OBYM | addım=50 | t=23.2s
+OBYM: GOAL | 8.818 m | 36.144 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4009_myM_LR | completed=39/80
+RUN | v3_test_layout_4009_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=23.8s
+OBYM: GOAL | 8.818 m | 31.944 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4009_myM_RL | FixedMinus45
+OBYM | addım=25 | t=12.4s
+OBYM | addım=50 | t=23.4s
+OBYM: GOAL | 8.818 m | 32.044 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4009_myM_RL | FixedPlus45
+OBYM | addım=25 | t=13.6s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 8.818 m | 33.244 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4009_myM_RL | completed=40/80
+RUN | v3_test_layout_4010_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.9s
+OBYM | addım=50 | t=23.6s
+OBYM | addım=75 | t=42.6s
+OBYM: GOAL | 9.632 m | 45.890 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4010_myP_LR | FixedMinus45
+OBYM | addım=25 | t=15.5s
+OBYM | addım=50 | t=26.6s
+OBYM: GOAL | 8.639 m | 38.508 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4010_myP_LR | FixedPlus45
+OBYM | addım=25 | t=14.2s
+OBYM | addım=50 | t=24.0s
+OBYM | addım=75 | t=42.3s
+OBYM: GOAL | 9.645 m | 46.612 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4010_myP_LR | completed=41/80
+RUN | v3_test_layout_4010_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.4s
+OBYM | addım=50 | t=26.7s
+OBYM: GOAL | 9.086 m | 42.215 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4010_myP_RL | FixedMinus45
+OBYM | addım=25 | t=12.0s
+OBYM | addım=50 | t=26.3s
+OBYM | addım=75 | t=42.3s
+OBYM: GOAL | 9.086 m | 42.315 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4010_myP_RL | FixedPlus45
+OBYM | addım=25 | t=13.7s
+OBYM | addım=50 | t=24.8s
+OBYM: GOAL | 8.610 m | 38.126 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4010_myP_RL | completed=42/80
+RUN | v3_test_layout_4010_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=14.7s
+OBYM | addım=50 | t=25.8s
+OBYM: GOAL | 8.556 m | 38.401 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4010_myM_LR | FixedMinus45
+OBYM | addım=25 | t=15.5s
+OBYM | addım=50 | t=26.6s
+OBYM: GOAL | 8.556 m | 39.601 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4010_myM_LR | FixedPlus45
+OBYM | addım=25 | t=13.8s
+OBYM | addım=50 | t=24.9s
+OBYM: GOAL | 8.569 m | 37.922 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4010_myM_LR | completed=43/80
+RUN | v3_test_layout_4010_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.0s
+OBYM: GOAL | 8.569 m | 37.922 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4010_myM_RL | FixedMinus45
+OBYM | addım=25 | t=12.5s
+OBYM | addım=50 | t=23.6s
+OBYM: GOAL | 8.569 m | 38.022 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4010_myM_RL | FixedPlus45
+OBYM | addım=25 | t=13.6s
+OBYM | addım=50 | t=24.7s
+OBYM: GOAL | 8.569 m | 39.122 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4010_myM_RL | completed=44/80
+RUN | v3_test_layout_4011_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=13.9s
+OBYM | addım=50 | t=23.4s
+OBYM | addım=75 | t=35.9s
+OBYM | addım=100 | t=47.2s
+OBYM: GOAL | 12.902 m | 48.565 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4011_myP_LR | FixedMinus45
+OBYM | addım=25 | t=13.7s
+OBYM | addım=50 | t=24.9s
+OBYM: GOAL | 9.053 m | 33.543 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4011_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.3s
+OBYM | addım=50 | t=22.9s
+OBYM | addım=75 | t=36.6s
+OBYM: GOAL | 11.739 m | 43.847 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4011_myP_LR | completed=45/80
+RUN | v3_test_layout_4011_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=12.3s
+OBYM | addım=50 | t=26.0s
+OBYM | addım=75 | t=37.8s
+OBYM: GOAL | 9.818 m | 39.644 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4011_myP_RL | FixedMinus45
+OBYM | addım=25 | t=11.9s
+OBYM | addım=50 | t=25.1s
+OBYM | addım=75 | t=37.4s
+OBYM: GOAL | 9.818 m | 39.744 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4011_myP_RL | FixedPlus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.0s
+OBYM: GOAL | 9.025 m | 33.162 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4011_myP_RL | completed=46/80
+RUN | v3_test_layout_4011_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=25.1s
+OBYM: GOAL | 9.029 m | 34.883 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4011_myM_LR | FixedMinus45
+OBYM | addım=25 | t=13.7s
+OBYM | addım=50 | t=27.3s
+OBYM | addım=75 | t=39.2s
+OBYM: GOAL | 10.012 m | 42.120 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4011_myM_LR | FixedPlus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=24.4s
+OBYM: GOAL | 8.983 m | 34.158 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4011_myM_LR | completed=47/80
+RUN | v3_test_layout_4011_myM_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=24.4s
+OBYM: GOAL | 8.983 m | 32.958 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4011_myM_RL | FixedMinus45
+OBYM | addım=25 | t=12.9s
+OBYM | addım=50 | t=24.0s
+OBYM: GOAL | 8.983 m | 33.058 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4011_myM_RL | FixedPlus45
+OBYM | addım=25 | t=14.0s
+OBYM | addım=50 | t=25.1s
+OBYM: GOAL | 8.983 m | 34.158 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4011_myM_RL | completed=48/80
+RUN | v3_test_layout_4012_myP_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=14.8s
+OBYM | addım=50 | t=25.5s
+OBYM: GOAL | 8.556 m | 34.801 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4012_myP_LR | FixedMinus45
+OBYM | addım=25 | t=15.6s
+OBYM | addım=50 | t=26.2s
+OBYM: GOAL | 8.556 m | 36.001 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4012_myP_LR | FixedPlus45
+OBYM | addım=25 | t=13.9s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 8.569 m | 34.322 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4012_myP_LR | completed=49/80
+RUN | v3_test_layout_4012_myP_RL | NoView
+OBYM | addım=0 | t=0.9s
+OBYM | addım=25 | t=13.6s
+OBYM | addım=50 | t=23.9s
+OBYM: GOAL | 8.569 m | 36.722 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4012_myP_RL | FixedMinus45
+OBYM | addım=25 | t=13.4s
+OBYM | addım=50 | t=23.5s
+OBYM: GOAL | 8.569 m | 36.822 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4012_myP_RL | FixedPlus45
+OBYM | addım=25 | t=12.3s
+OBYM | addım=50 | t=23.4s
+OBYM: GOAL | 9.200 m | 33.901 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4012_myP_RL | completed=50/80
+RUN | v3_test_layout_4012_myM_LR | NoView
+OBYM | addım=0 | t=0.8s
+OBYM | addım=25 | t=12.8s
+OBYM | addım=50 | t=24.6s
+OBYM: GOAL | 9.246 m | 34.526 s | baxış=0 | təmas=0
+RUN | v3_test_layout_4012_myM_LR | FixedMinus45
+OBYM | addım=25 | t=15.6s
+OBYM | addım=50 | t=26.2s
+OBYM: GOAL | 8.639 m | 34.908 s | baxış=1 | təmas=0
+RUN | v3_test_layout_4012_myM_LR | FixedPlus45
+OBYM | addım=25 | t=13.2s
+OBYM | addım=50 | t=23.9s
+OBYM: GOAL | 9.200 m | 33.801 s | baxış=1 | təmas=0
+SAVED | v3_test_layout_4012_myM_LR | completed=51/80
+RUN | v3_test_layout_4012_myM_RL | NoView
+OBYM | addım=25 | t=14.5s
+OBYM | addım=50 | t=25.6s
+OBYM: GOAL | 9.288 m | 36.110 s | baxış=0 | təmas=0
+BATCH TIME LIMIT | saved branches will be reused
+PROGRESS | complete=51/80 | new episodes=157 | minutes=60.4
+RESUME | run the same cell again after any reported error is resolved
+OUTPUT | C:\Users\celal\obym-github\results\v3-final-test\94fd47e48b4f

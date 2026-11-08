@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "run_id": "obym_d78eab70",
+    "runner_revision": "day3_shared_v1",
+    "method": "FixedPlus45",
+    "scene": "v3_test_layout_4016_myP_LR",
+    "outcome": "GOAL",
+    "success": true,
+    "sim_time_s": 42.51891231908004,
+    "distance_m": 9.52756492761408,
+    "collision_attempts": 0,
+    "goal_error_m": 0.1581138830084163,
+    "final_position": [
+      3.45000000000001,
+      0.15000000000000052,
+      0.2
+    ],
+    "observations": 97,
+    "planning_cycles": 96,
+    "frontier_scans": 0,
+    "view_attempts": 1,
+    "completed_views": 1,
+    "max_sim_time_s": 180.0,
+    "max_decisions": 300,
+    "wall_time_s": 27.79625329999908,
+    "config": {
+      "unknown_cost": 2.0,
+      "speed_m_s": 0.4,
+      "turn_speed_rad_s": 1.5707963267948966,
+      "sensor_period_s": 0.1,
+      "goal_tolerance_m": 0.25,
+      "view_scoring": {
+        "lookahead_m": 2.0,
+        "corridor_radius_m": 0.6,
+        "max_view_range_m": 4.0,
+        "gain_seconds_per_m2": 3.0,
+        "minimum_score_s": 0.15
+      },
+      "view_control": {
+        "cooldown_s": 2.0,
+        "max_views": 6,
+        "memory_radius_m": 0.3,
+        "memory_angle_deg": 22.5
+      }
+    },
+    "directory": "C:\\Users\\celal\\obym-github\\results\\v3-final-test\\94fd47e48b4f\\results\\day3\\obym_d78eab70",
+    "postturn_trace": {
+      "postturn_checks": 17,
+      "changed_next_action": 0
+    },
+    "prediction_wall_s": 0,
+    "freeze_id": "94fd47e48b4f"
+  },
+  "episode_hashes": {
+    "decisions.json": "a0aa23fda49498c0bffd7b7d4275ed1f591eb641999eb58ce80df2f0d8c05faf",
+    "heldout_decisions.json": "067e81e83bc543da4bd1b1cf783274d67749ec490a767866539535a29c3f0d4e",
+    "last_rgb.png": "8626cfc6af313e205295a75fcc1c3e01114a0c801abd241dea2ebf36d39385ed",
+    "map.npy": "fc99b391c6bc0e8f4c4ca6ac85e7f3ede7a588d455129d7e6d747aa0b9d9230c",
+    "motion.json": "920badc808483c48de5ba8733b3ffdaf0a81eb1665c62361628eb9c89bb65bea",
+    "summary.json": "edcdeee84c7a97249d907ac0bee974b5b1ff9a341ecde93765786582203a5dfa",
+    "views.json": "33955ba1526dbb297effc623aacc3989cc38c871b4053807c12df3e8a3a09005",
+    "voxels.npy": "4f1676ef0002979b0a262d610c8fb0f17b77bd1f2ad538fd69080f50912c9c78"
+  },
+  "origin": "executed"
+}

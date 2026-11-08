@@ -1,0 +1,75 @@
+{
+  "config": {
+    "version": "v3_initial_pilot",
+    "epochs": 60,
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "minimum_gain_s": 0.15,
+    "rank_weight": 0.5,
+    "ridge_alpha": 10.0,
+    "target_scale_s": 7.443235397338867,
+    "protocol": {
+      "manifest_sha256": "1acbfac82a9fdc7cc9e90e8aec0dda6a4a12f78d54d8061b70d8636a152aa9bb",
+      "controller_sha256": "891d968c0400e787a4add611bc8903c92497a70f54ba2ac21341419c7d20be65",
+      "decision": "first_eligible",
+      "angles_deg": [
+        -45,
+        45
+      ],
+      "target": "NoView_sim_time_minus_single_view_sim_time"
+    }
+  },
+  "validation": {
+    "NoView": {
+      "gain_s": 0.0,
+      "regret_s": 4.304422475397587,
+      "harmful": 0,
+      "looks": 0
+    },
+    "FixedMinus45": {
+      "gain_s": 0.7532040908311805,
+      "regret_s": 3.5512183845664063,
+      "harmful": 14,
+      "looks": 24
+    },
+    "FixedPlus45": {
+      "gain_s": 1.125409426788489,
+      "regret_s": 3.179013048609098,
+      "harmful": 9,
+      "looks": 24
+    },
+    "HeadingRule": {
+      "gain_s": -0.037500000558793545,
+      "regret_s": 4.34192247595638,
+      "harmful": 9,
+      "looks": 12
+    },
+    "CNN_MSE": {
+      "gain_s": 0.6525538265705109,
+      "regret_s": 3.651868648827076,
+      "harmful": 4,
+      "looks": 14
+    },
+    "CNN_MSE_Rank": {
+      "gain_s": 0.6525538265705109,
+      "regret_s": 3.651868648827076,
+      "harmful": 4,
+      "looks": 14
+    },
+    "PoseRidge": {
+      "gain_s": 1.0887759228547413,
+      "regret_s": 3.2156465525428453,
+      "harmful": 12,
+      "looks": 24
+    },
+    "MapRidge": {
+      "gain_s": 0.91272900501887,
+      "regret_s": 3.391693470378717,
+      "harmful": 9,
+      "looks": 19
+    }
+  }
+}

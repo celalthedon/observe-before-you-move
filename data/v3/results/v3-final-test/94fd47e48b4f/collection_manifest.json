@@ -1,0 +1,11 @@
+{
+  "freeze_id": "94fd47e48b4f",
+  "preflight_sha256": "988a5ac29047294a85f354c280f14c74f275cd2ea5b056167c68b50115d3184f",
+  "collector_sha256": "dce088cbd4f007a93822d21fc46163e26b571f024c5010c6945dccdf9aca0237",
+  "branches": [
+    "NoView",
+    "FixedMinus45",
+    "FixedPlus45"
+  ],
+  "policy_results": "derive_frozen_first_eligible_choices_from_executed_branches"
+}

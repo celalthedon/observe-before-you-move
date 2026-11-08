@@ -1,0 +1,193 @@
+{
+  "revision": "v3_first_eligible_final_v1",
+  "primary_model": "SpatialRidgeCV",
+  "spatial_configuration": {
+    "family": "SpatialRidgeCV",
+    "level": 4,
+    "alpha": 100.0,
+    "threshold_s": 0.0,
+    "gain_s": 1.667861027099813,
+    "regret_s": 2.1331041654730334,
+    "harmful": 32,
+    "looks": 70
+  },
+  "controller_sha256": "891d968c0400e787a4add611bc8903c92497a70f54ba2ac21341419c7d20be65",
+  "source_hashes": {
+    "src/obym/__init__.py": "610e160fac28884e9bb29759ef61f979990018bf9a442a4d7102ef23943623b7",
+    "src/obym/decision.py": "e6373a0a0b987065a728511c50bb75b9cb086a9cc9d86268e59b33cd1b99e955",
+    "src/obym/encoding.py": "987e61de08db48b4691630e0916d3006979f76522c5b707325041a551e62d734",
+    "src/obym/heldout_selector.py": "eeb0e7e133601c266b5dff87f6e4ead655ed3812b9dbe4cd0019ca1296955e51",
+    "src/obym/inference.py": "56f20924ba3eedea878647bc7255f5410d365eeea868ebc7778b09038be0df8c",
+    "src/obym/initial_centering_audit.py": "1daaff7dd18c03f4c37f564ee0f71e2368b6a16acfade7b756396f57c20824fc",
+    "src/obym/isolated_inference.py": "20063dc4fdc7f399ac93690f23a00a00408418ec217c6d9bab9321ad0535f90c",
+    "src/obym/simulation.py": "c0077d7a4f14192021be284ff7164582ec0ab6d448202d366d78e700c5a2f9b4",
+    "tools/evaluate.py": "770c0e9dea3602410ce41a4e1bae96275e79a0f063205b88e7c542703faacd64"
+  },
+  "artifact_hashes": {
+    "SpatialRidgeCV.npz": "0fc040c53fb7523ea9e87e41a09d0fb2908850c435717f2a24abf957c9260017",
+    "PoseRidgeCV.npz": "792d1fffb3db4431202c1c6c1f4f8301ce694912da3ab9eb37d4eff95135d839",
+    "MeanMapRidgeCV.npz": "e19df3ea92d9d6572cee6bf255b0ff414b6d84313d47cd27f42b4a7fc4e877b9",
+    "cnn_models.pt": "b8d637bd5be7c725454a26e9354cb7e4c1967d879126221ca15e0d258737b0d1",
+    "train_selection.json": "a1304429f4d4d3f67a060962b01c50a2d18dcf40d46d052ade1d70687b85908d",
+    "collection_protocol.json": "50264a23f448b151af4d936434d5d2468ab8a9051aa02d402b92ea53bf761906",
+    "dataset_manifest.json": "1acbfac82a9fdc7cc9e90e8aec0dda6a4a12f78d54d8061b70d8636a152aa9bb",
+    "validation_summary.json": "ba25213277857f74f0a85a54ea4a69a83e5e784b506da1240a6b759240de001b",
+    "validation_decisions.csv": "ad83d14f7761e6d2f92a39f64d56a10560acdf4f364a058f8852b801c115a828"
+  },
+  "decision": "once_at_first_eligible_state_then_navigation_only",
+  "actions_deg": [
+    0,
+    -45,
+    45
+  ],
+  "zero_action": "continue_without_optional_observation",
+  "tie_break": "minus45_before_plus45",
+  "look_condition": "maximum_prediction_strictly_above_model_threshold",
+  "maximum_optional_views": 1,
+  "test_sources": [
+    {
+      "name": "v3_test_layout_4000",
+      "seed": 4000,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4001",
+      "seed": 4001,
+      "kind": "gate_open"
+    },
+    {
+      "name": "v3_test_layout_4002",
+      "seed": 4002,
+      "kind": "gate_closed"
+    },
+    {
+      "name": "v3_test_layout_4003",
+      "seed": 4003,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4004",
+      "seed": 4004,
+      "kind": "gate_open"
+    },
+    {
+      "name": "v3_test_layout_4005",
+      "seed": 4005,
+      "kind": "gate_closed"
+    },
+    {
+      "name": "v3_test_layout_4006",
+      "seed": 4006,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4007",
+      "seed": 4007,
+      "kind": "gate_open"
+    },
+    {
+      "name": "v3_test_layout_4008",
+      "seed": 4008,
+      "kind": "gate_closed"
+    },
+    {
+      "name": "v3_test_layout_4009",
+      "seed": 4009,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4010",
+      "seed": 4010,
+      "kind": "gate_open"
+    },
+    {
+      "name": "v3_test_layout_4011",
+      "seed": 4011,
+      "kind": "gate_closed"
+    },
+    {
+      "name": "v3_test_layout_4012",
+      "seed": 4012,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4013",
+      "seed": 4013,
+      "kind": "gate_open"
+    },
+    {
+      "name": "v3_test_layout_4014",
+      "seed": 4014,
+      "kind": "gate_closed"
+    },
+    {
+      "name": "v3_test_layout_4015",
+      "seed": 4015,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4016",
+      "seed": 4016,
+      "kind": "gate_open"
+    },
+    {
+      "name": "v3_test_layout_4017",
+      "seed": 4017,
+      "kind": "gate_closed"
+    },
+    {
+      "name": "v3_test_layout_4018",
+      "seed": 4018,
+      "kind": "barrier"
+    },
+    {
+      "name": "v3_test_layout_4019",
+      "seed": 4019,
+      "kind": "gate_open"
+    }
+  ],
+  "variants_per_source": [
+    "myP_LR",
+    "myP_RL",
+    "myM_LR",
+    "myM_RL"
+  ],
+  "test_scope": "new_layouts_from_the_same_three_scene_templates",
+  "before_test": [
+    "verify_seed_and_geometry_separation_from_existing_experiments",
+    "verify_saved_model_prediction_parity_on_validation"
+  ],
+  "policies": [
+    "NoView",
+    "FixedMinus45",
+    "FixedPlus45",
+    "HeadingRule",
+    "PoseRidgeCV",
+    "MeanMapRidgeCV",
+    "SpatialRidgeCV",
+    "CNN_MSE",
+    "CNN_MSE_Rank"
+  ],
+  "heading_rule": "minus45_if_initial_heading_faces_west_else_no_view",
+  "primary_metric": "mean_simulated_time_with_failures_penalized_at_180_s",
+  "failure": "non_GOAL_outcome_or_nonzero_collision_attempts",
+  "secondary_metrics": [
+    "safe_success",
+    "distance_m",
+    "optional_views",
+    "harmful_looks",
+    "decision_regret_s",
+    "inference_wall_s"
+  ],
+  "inference_wall_time_in_primary_metric": false,
+  "statistics": {
+    "unit": "source_scene_with_all_four_variants",
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20261108,
+    "interval": "percentile_95",
+    "paired_comparisons": "SpatialRidgeCV_against_each_baseline"
+  },
+  "max_sim_time_s": 180.0,
+  "max_decisions": 300,
+  "model_tuning_after_test_begins": false
+}

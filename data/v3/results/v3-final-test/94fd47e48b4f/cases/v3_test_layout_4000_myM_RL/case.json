@@ -1,0 +1,35 @@
+{
+  "name": "v3_test_layout_4000_myM_RL",
+  "split": "test",
+  "source_group": "v3_test_layout_4000",
+  "source_spec": {
+    "name": "v3_test_layout_4000",
+    "seed": 4000,
+    "kind": "barrier"
+  },
+  "mirror_y": -1,
+  "travel_direction": -1,
+  "start_xy": [
+    3.5,
+    0.0
+  ],
+  "goal_xy": [
+    -3.5,
+    0.0
+  ],
+  "initial_yaw_rad": 3.141592653589793,
+  "geometry": [
+    [
+      [
+        0.9727668273552802,
+        4.861856756112283,
+        0.8
+      ],
+      [
+        -0.19360737561963928,
+        -0.17710716173909624,
+        0.4
+      ]
+    ]
+  ]
+}

@@ -12,4 +12,4 @@ build/
 dist/
 *.egg-info/
 results/generated/
-results/
+/results/

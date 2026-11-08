@@ -1,0 +1,10 @@
+{
+  "manifest_sha256": "1acbfac82a9fdc7cc9e90e8aec0dda6a4a12f78d54d8061b70d8636a152aa9bb",
+  "controller_sha256": "891d968c0400e787a4add611bc8903c92497a70f54ba2ac21341419c7d20be65",
+  "decision": "first_eligible",
+  "angles_deg": [
+    -45,
+    45
+  ],
+  "target": "NoView_sim_time_minus_single_view_sim_time"
+}

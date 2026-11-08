@@ -1,0 +1,74 @@
+[
+  {
+    "baseline": "NoView",
+    "mean_saved_s": 1.3811997887773422,
+    "ci_low_s": 0.4019203888123911,
+    "ci_high_s": 2.5154075500658792,
+    "source_wins": 11,
+    "source_ties": 0,
+    "source_losses": 9
+  },
+  {
+    "baseline": "FixedMinus45",
+    "mean_saved_s": 1.1222828463653962,
+    "ci_low_s": 0.41992186883813276,
+    "ci_high_s": 1.968527175331488,
+    "source_wins": 14,
+    "source_ties": 0,
+    "source_losses": 6
+  },
+  {
+    "baseline": "FixedPlus45",
+    "mean_saved_s": 0.4940392911301892,
+    "ci_low_s": -0.4351147573721852,
+    "ci_high_s": 1.5846282637507287,
+    "source_wins": 9,
+    "source_ties": 0,
+    "source_losses": 11
+  },
+  {
+    "baseline": "HeadingRule",
+    "mean_saved_s": 1.418699788803758,
+    "ci_low_s": 0.43663504346222637,
+    "ci_high_s": 2.557662559378452,
+    "source_wins": 11,
+    "source_ties": 0,
+    "source_losses": 9
+  },
+  {
+    "baseline": "PoseRidgeCV",
+    "mean_saved_s": 0.5972071806470076,
+    "ci_low_s": 0.06277601450490962,
+    "ci_high_s": 1.3027526651501806,
+    "source_wins": 11,
+    "source_ties": 5,
+    "source_losses": 4
+  },
+  {
+    "baseline": "MeanMapRidgeCV",
+    "mean_saved_s": 0.5972071806470076,
+    "ci_low_s": 0.06277601450490962,
+    "ci_high_s": 1.3027526651501806,
+    "source_wins": 11,
+    "source_ties": 5,
+    "source_losses": 4
+  },
+  {
+    "baseline": "CNN_MSE",
+    "mean_saved_s": 0.3480858021020087,
+    "ci_low_s": -0.35438128851985223,
+    "ci_high_s": 1.274280469153239,
+    "source_wins": 5,
+    "source_ties": 5,
+    "source_losses": 10
+  },
+  {
+    "baseline": "CNN_MSE_Rank",
+    "mean_saved_s": 0.30662005478679577,
+    "ci_low_s": -0.43634331010092864,
+    "ci_high_s": 1.245475160895053,
+    "source_wins": 7,
+    "source_ties": 4,
+    "source_losses": 9
+  }
+]

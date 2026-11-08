@@ -1,0 +1,3928 @@
+{
+  "freeze_id": "94fd47e48b4f",
+  "protocol_sha256": "2042f839866917fa3292c225049877b3f4d4ffd3a0155d936a5a543844b42d00",
+  "controller_sha256": "891d968c0400e787a4add611bc8903c92497a70f54ba2ac21341419c7d20be65",
+  "base_config": {
+    "revision": "task_value_smoke_v1",
+    "split": "train",
+    "scenes": [
+      {
+        "name": "train_layout_1000",
+        "family_id": "layout_1000",
+        "split": "train",
+        "seed": 1000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+      },
+      {
+        "name": "train_layout_1001",
+        "family_id": "layout_1001",
+        "split": "train",
+        "seed": 1001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "058d930ab577df7c0c3bee9070d71e50c3042eea6ec006c40db2e902211c32ba"
+      },
+      {
+        "name": "train_layout_1002",
+        "family_id": "layout_1002",
+        "split": "train",
+        "seed": 1002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "2b88087b0002858f44da7925d20278f59628287b26b956b26ab0f0dd11746385"
+      }
+    ],
+    "geometry": [
+      [
+        [
+          [
+            1.0128314427850376,
+            4.405762770509495,
+            1.3
+          ],
+          [
+            -0.020340741874422252,
+            -0.20772644021872483,
+            0.65
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1.0675569571419705,
+            3.5235507017304974,
+            2.0
+          ],
+          [
+            -0.21861729618264922,
+            0.25052304517878743,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9206541466672544,
+            0.4,
+            2.0
+          ],
+          [
+            0.7754882557219632,
+            1.8122983960440362,
+            1.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.9284926956898696,
+            4.035784006506421,
+            2.0
+          ],
+          [
+            0.1733286219477338,
+            -0.07735565662656191,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            0.4,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            1.7405363466266486,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            1.9594636533733514,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            2.9202681733133242,
+            1.0
+          ]
+        ]
+      ]
+    ],
+    "state_fractions": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "offsets_deg": [
+      -45,
+      0,
+      45
+    ],
+    "continuation": "Optimistic_without_additional_views",
+    "label": "baseline_sim_time_minus_single_view_sim_time",
+    "max_sim_time": 180.0,
+    "max_decisions": 300,
+    "channels": [
+      "free",
+      "occupied",
+      "unknown",
+      "route_unknown",
+      "candidate_position",
+      "predicted_new_view",
+      "valid_world"
+    ],
+    "patch_size": 80,
+    "grid_res": 0.1,
+    "camera": {
+      "width": 320,
+      "height": 240,
+      "fov": 60,
+      "near": 0.05,
+      "far": 15.0
+    },
+    "view_config": {
+      "lookahead_m": 2.0,
+      "corridor_radius_m": 0.6,
+      "max_view_range_m": 4.0,
+      "gain_seconds_per_m2": 3.0,
+      "minimum_score_s": 0.15
+    },
+    "start_xy": [
+      -3.5,
+      0
+    ],
+    "goal_xy": [
+      3.5,
+      0
+    ],
+    "goal_tolerance": 0.25,
+    "nav_speed": 0.4,
+    "turn_speed": 1.5707963267948966,
+    "sensor_period": 0.1,
+    "robot_radius": 0.25,
+    "clearance": 0.05,
+    "voxel": [
+      0.02,
+      0.4,
+      4
+    ]
+  },
+  "cases": [
+    {
+      "name": "v3_test_layout_4000_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4000",
+      "source_spec": {
+        "name": "v3_test_layout_4000",
+        "seed": 4000,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9727668273552802,
+            4.861856756112283,
+            0.8
+          ],
+          [
+            -0.19360737561963928,
+            0.17710716173909624,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4000_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4000",
+      "source_spec": {
+        "name": "v3_test_layout_4000",
+        "seed": 4000,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9727668273552802,
+            4.861856756112283,
+            0.8
+          ],
+          [
+            -0.19360737561963928,
+            0.17710716173909624,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4000_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4000",
+      "source_spec": {
+        "name": "v3_test_layout_4000",
+        "seed": 4000,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9727668273552802,
+            4.861856756112283,
+            0.8
+          ],
+          [
+            -0.19360737561963928,
+            -0.17710716173909624,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4000_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4000",
+      "source_spec": {
+        "name": "v3_test_layout_4000",
+        "seed": 4000,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9727668273552802,
+            4.861856756112283,
+            0.8
+          ],
+          [
+            -0.19360737561963928,
+            -0.17710716173909624,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4001_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4001",
+      "source_spec": {
+        "name": "v3_test_layout_4001",
+        "seed": 4001,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7398680517854828,
+            4.340365209598374,
+            2.0
+          ],
+          [
+            -0.12230796081885364,
+            -0.31083533431949184,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.152155022041442,
+            0.4,
+            2.0
+          ],
+          [
+            0.8237035760946088,
+            1.659347270479695,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4001_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4001",
+      "source_spec": {
+        "name": "v3_test_layout_4001",
+        "seed": 4001,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7398680517854828,
+            4.340365209598374,
+            2.0
+          ],
+          [
+            -0.12230796081885364,
+            -0.31083533431949184,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.152155022041442,
+            0.4,
+            2.0
+          ],
+          [
+            0.8237035760946088,
+            1.659347270479695,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4001_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4001",
+      "source_spec": {
+        "name": "v3_test_layout_4001",
+        "seed": 4001,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7398680517854828,
+            4.340365209598374,
+            2.0
+          ],
+          [
+            -0.12230796081885364,
+            0.31083533431949184,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.152155022041442,
+            0.4,
+            2.0
+          ],
+          [
+            0.8237035760946088,
+            -1.659347270479695,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4001_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4001",
+      "source_spec": {
+        "name": "v3_test_layout_4001",
+        "seed": 4001,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7398680517854828,
+            4.340365209598374,
+            2.0
+          ],
+          [
+            -0.12230796081885364,
+            0.31083533431949184,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.152155022041442,
+            0.4,
+            2.0
+          ],
+          [
+            0.8237035760946088,
+            -1.659347270479695,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4002_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4002",
+      "source_spec": {
+        "name": "v3_test_layout_4002",
+        "seed": 4002,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0549106314000263,
+            4.666506599358848,
+            2.0
+          ],
+          [
+            -0.27451087014627307,
+            -0.17718778647925984,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            0.4,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            1.956065513200164,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            1.7439344867998359,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            3.0280327566000818,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4002_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4002",
+      "source_spec": {
+        "name": "v3_test_layout_4002",
+        "seed": 4002,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0549106314000263,
+            4.666506599358848,
+            2.0
+          ],
+          [
+            -0.27451087014627307,
+            -0.17718778647925984,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            0.4,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            1.956065513200164,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            1.7439344867998359,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            3.0280327566000818,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4002_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4002",
+      "source_spec": {
+        "name": "v3_test_layout_4002",
+        "seed": 4002,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0549106314000263,
+            4.666506599358848,
+            2.0
+          ],
+          [
+            -0.27451087014627307,
+            0.17718778647925984,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            0.4,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            -1.956065513200164,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            1.7439344867998359,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            -3.0280327566000818,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4002_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4002",
+      "source_spec": {
+        "name": "v3_test_layout_4002",
+        "seed": 4002,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0549106314000263,
+            4.666506599358848,
+            2.0
+          ],
+          [
+            -0.27451087014627307,
+            0.17718778647925984,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            0.4,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            -1.956065513200164,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9368944833501422,
+            1.7439344867998359,
+            2.0
+          ],
+          [
+            0.7213916872288112,
+            -3.0280327566000818,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4003_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4003",
+      "source_spec": {
+        "name": "v3_test_layout_4003",
+        "seed": 4003,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7615482749133377,
+            3.8024694727489727,
+            0.45
+          ],
+          [
+            -0.25003731896793796,
+            0.022191294863665723,
+            0.225
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4003_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4003",
+      "source_spec": {
+        "name": "v3_test_layout_4003",
+        "seed": 4003,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7615482749133377,
+            3.8024694727489727,
+            0.45
+          ],
+          [
+            -0.25003731896793796,
+            0.022191294863665723,
+            0.225
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4003_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4003",
+      "source_spec": {
+        "name": "v3_test_layout_4003",
+        "seed": 4003,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7615482749133377,
+            3.8024694727489727,
+            0.45
+          ],
+          [
+            -0.25003731896793796,
+            -0.022191294863665723,
+            0.225
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4003_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4003",
+      "source_spec": {
+        "name": "v3_test_layout_4003",
+        "seed": 4003,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7615482749133377,
+            3.8024694727489727,
+            0.45
+          ],
+          [
+            -0.25003731896793796,
+            -0.022191294863665723,
+            0.225
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4004_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4004",
+      "source_spec": {
+        "name": "v3_test_layout_4004",
+        "seed": 4004,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.182000658023855,
+            4.562187105573012,
+            2.0
+          ],
+          [
+            0.10164964583403951,
+            -0.2391511155914094,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0841922779465376,
+            0.4,
+            2.0
+          ],
+          [
+            1.2347461138192357,
+            1.8419424371950968,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4004_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4004",
+      "source_spec": {
+        "name": "v3_test_layout_4004",
+        "seed": 4004,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.182000658023855,
+            4.562187105573012,
+            2.0
+          ],
+          [
+            0.10164964583403951,
+            -0.2391511155914094,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0841922779465376,
+            0.4,
+            2.0
+          ],
+          [
+            1.2347461138192357,
+            1.8419424371950968,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4004_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4004",
+      "source_spec": {
+        "name": "v3_test_layout_4004",
+        "seed": 4004,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.182000658023855,
+            4.562187105573012,
+            2.0
+          ],
+          [
+            0.10164964583403951,
+            0.2391511155914094,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0841922779465376,
+            0.4,
+            2.0
+          ],
+          [
+            1.2347461138192357,
+            -1.8419424371950968,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4004_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4004",
+      "source_spec": {
+        "name": "v3_test_layout_4004",
+        "seed": 4004,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.182000658023855,
+            4.562187105573012,
+            2.0
+          ],
+          [
+            0.10164964583403951,
+            0.2391511155914094,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0841922779465376,
+            0.4,
+            2.0
+          ],
+          [
+            1.2347461138192357,
+            -1.8419424371950968,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4005_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4005",
+      "source_spec": {
+        "name": "v3_test_layout_4005",
+        "seed": 4005,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2566030317308976,
+            3.9539696412517698,
+            2.0
+          ],
+          [
+            0.09777801505874034,
+            0.16705041027042566,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            0.4,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            1.9440352308963107,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            1.7559647691036893,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            3.0220176154481555,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4005_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4005",
+      "source_spec": {
+        "name": "v3_test_layout_4005",
+        "seed": 4005,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2566030317308976,
+            3.9539696412517698,
+            2.0
+          ],
+          [
+            0.09777801505874034,
+            0.16705041027042566,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            0.4,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            1.9440352308963107,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            1.7559647691036893,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            3.0220176154481555,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4005_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4005",
+      "source_spec": {
+        "name": "v3_test_layout_4005",
+        "seed": 4005,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2566030317308976,
+            3.9539696412517698,
+            2.0
+          ],
+          [
+            0.09777801505874034,
+            -0.16705041027042566,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            0.4,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            -1.9440352308963107,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            1.7559647691036893,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            -3.0220176154481555,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4005_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4005",
+      "source_spec": {
+        "name": "v3_test_layout_4005",
+        "seed": 4005,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2566030317308976,
+            3.9539696412517698,
+            2.0
+          ],
+          [
+            0.09777801505874034,
+            -0.16705041027042566,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            0.4,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            -1.9440352308963107,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9981576629638036,
+            1.7559647691036893,
+            2.0
+          ],
+          [
+            1.2251583624060909,
+            -3.0220176154481555,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4006_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4006",
+      "source_spec": {
+        "name": "v3_test_layout_4006",
+        "seed": 4006,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9725889079510612,
+            4.519140491352881,
+            0.8
+          ],
+          [
+            -0.05386416265972305,
+            -0.17047091584635263,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4006_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4006",
+      "source_spec": {
+        "name": "v3_test_layout_4006",
+        "seed": 4006,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9725889079510612,
+            4.519140491352881,
+            0.8
+          ],
+          [
+            -0.05386416265972305,
+            -0.17047091584635263,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4006_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4006",
+      "source_spec": {
+        "name": "v3_test_layout_4006",
+        "seed": 4006,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9725889079510612,
+            4.519140491352881,
+            0.8
+          ],
+          [
+            -0.05386416265972305,
+            0.17047091584635263,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4006_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4006",
+      "source_spec": {
+        "name": "v3_test_layout_4006",
+        "seed": 4006,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9725889079510612,
+            4.519140491352881,
+            0.8
+          ],
+          [
+            -0.05386416265972305,
+            0.17047091584635263,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4007_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4007",
+      "source_spec": {
+        "name": "v3_test_layout_4007",
+        "seed": 4007,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9628337831267612,
+            4.729515180916516,
+            2.0
+          ],
+          [
+            0.2924743290853521,
+            -0.26878709386052396,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9549437264649365,
+            0.4,
+            2.0
+          ],
+          [
+            1.251363083881201,
+            1.895970496597734,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4007_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4007",
+      "source_spec": {
+        "name": "v3_test_layout_4007",
+        "seed": 4007,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9628337831267612,
+            4.729515180916516,
+            2.0
+          ],
+          [
+            0.2924743290853521,
+            -0.26878709386052396,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9549437264649365,
+            0.4,
+            2.0
+          ],
+          [
+            1.251363083881201,
+            1.895970496597734,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4007_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4007",
+      "source_spec": {
+        "name": "v3_test_layout_4007",
+        "seed": 4007,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9628337831267612,
+            4.729515180916516,
+            2.0
+          ],
+          [
+            0.2924743290853521,
+            0.26878709386052396,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9549437264649365,
+            0.4,
+            2.0
+          ],
+          [
+            1.251363083881201,
+            -1.895970496597734,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4007_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4007",
+      "source_spec": {
+        "name": "v3_test_layout_4007",
+        "seed": 4007,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9628337831267612,
+            4.729515180916516,
+            2.0
+          ],
+          [
+            0.2924743290853521,
+            0.26878709386052396,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9549437264649365,
+            0.4,
+            2.0
+          ],
+          [
+            1.251363083881201,
+            -1.895970496597734,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4008_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4008",
+      "source_spec": {
+        "name": "v3_test_layout_4008",
+        "seed": 4008,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8958337517384151,
+            4.436892313004773,
+            2.0
+          ],
+          [
+            0.10366735770904556,
+            0.08784883750767541,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            0.4,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            2.1062949940100615,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            1.5937050059899383,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            3.103147497005031,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4008_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4008",
+      "source_spec": {
+        "name": "v3_test_layout_4008",
+        "seed": 4008,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8958337517384151,
+            4.436892313004773,
+            2.0
+          ],
+          [
+            0.10366735770904556,
+            0.08784883750767541,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            0.4,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            2.1062949940100615,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            1.5937050059899383,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            3.103147497005031,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4008_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4008",
+      "source_spec": {
+        "name": "v3_test_layout_4008",
+        "seed": 4008,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8958337517384151,
+            4.436892313004773,
+            2.0
+          ],
+          [
+            0.10366735770904556,
+            -0.08784883750767541,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            0.4,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            -2.1062949940100615,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            1.5937050059899383,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            -3.103147497005031,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4008_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4008",
+      "source_spec": {
+        "name": "v3_test_layout_4008",
+        "seed": 4008,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8958337517384151,
+            4.436892313004773,
+            2.0
+          ],
+          [
+            0.10366735770904556,
+            -0.08784883750767541,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            0.4,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            -2.1062949940100615,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8598704787654097,
+            1.5937050059899383,
+            2.0
+          ],
+          [
+            0.9815194729609579,
+            -3.103147497005031,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4009_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4009",
+      "source_spec": {
+        "name": "v3_test_layout_4009",
+        "seed": 4009,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9090991696494197,
+            4.088686565930556,
+            2.0
+          ],
+          [
+            -0.3181956716752848,
+            -0.029344296430916572,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4009_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4009",
+      "source_spec": {
+        "name": "v3_test_layout_4009",
+        "seed": 4009,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9090991696494197,
+            4.088686565930556,
+            2.0
+          ],
+          [
+            -0.3181956716752848,
+            -0.029344296430916572,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4009_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4009",
+      "source_spec": {
+        "name": "v3_test_layout_4009",
+        "seed": 4009,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9090991696494197,
+            4.088686565930556,
+            2.0
+          ],
+          [
+            -0.3181956716752848,
+            0.029344296430916572,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4009_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4009",
+      "source_spec": {
+        "name": "v3_test_layout_4009",
+        "seed": 4009,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9090991696494197,
+            4.088686565930556,
+            2.0
+          ],
+          [
+            -0.3181956716752848,
+            0.029344296430916572,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4010_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4010",
+      "source_spec": {
+        "name": "v3_test_layout_4010",
+        "seed": 4010,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8135644014599526,
+            3.88401843703993,
+            2.0
+          ],
+          [
+            0.17297222056191552,
+            0.22053032934795347,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476071936266115,
+            0.4,
+            2.0
+          ],
+          [
+            1.2035580181051975,
+            1.9625395478679188,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4010_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4010",
+      "source_spec": {
+        "name": "v3_test_layout_4010",
+        "seed": 4010,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8135644014599526,
+            3.88401843703993,
+            2.0
+          ],
+          [
+            0.17297222056191552,
+            0.22053032934795347,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476071936266115,
+            0.4,
+            2.0
+          ],
+          [
+            1.2035580181051975,
+            1.9625395478679188,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4010_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4010",
+      "source_spec": {
+        "name": "v3_test_layout_4010",
+        "seed": 4010,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8135644014599526,
+            3.88401843703993,
+            2.0
+          ],
+          [
+            0.17297222056191552,
+            -0.22053032934795347,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476071936266115,
+            0.4,
+            2.0
+          ],
+          [
+            1.2035580181051975,
+            -1.9625395478679188,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4010_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4010",
+      "source_spec": {
+        "name": "v3_test_layout_4010",
+        "seed": 4010,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8135644014599526,
+            3.88401843703993,
+            2.0
+          ],
+          [
+            0.17297222056191552,
+            -0.22053032934795347,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476071936266115,
+            0.4,
+            2.0
+          ],
+          [
+            1.2035580181051975,
+            -1.9625395478679188,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4011_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4011",
+      "source_spec": {
+        "name": "v3_test_layout_4011",
+        "seed": 4011,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7110398966551632,
+            4.782731022779988,
+            2.0
+          ],
+          [
+            -0.00359721793948381,
+            0.11490785431779599,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            0.4,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            2.30627336570779,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            1.3937266342922099,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            3.203136682853895,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4011_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4011",
+      "source_spec": {
+        "name": "v3_test_layout_4011",
+        "seed": 4011,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7110398966551632,
+            4.782731022779988,
+            2.0
+          ],
+          [
+            -0.00359721793948381,
+            0.11490785431779599,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            0.4,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            2.30627336570779,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            1.3937266342922099,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            3.203136682853895,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4011_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4011",
+      "source_spec": {
+        "name": "v3_test_layout_4011",
+        "seed": 4011,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7110398966551632,
+            4.782731022779988,
+            2.0
+          ],
+          [
+            -0.00359721793948381,
+            -0.11490785431779599,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            0.4,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            -2.30627336570779,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            1.3937266342922099,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            -3.203136682853895,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4011_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4011",
+      "source_spec": {
+        "name": "v3_test_layout_4011",
+        "seed": 4011,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7110398966551632,
+            4.782731022779988,
+            2.0
+          ],
+          [
+            -0.00359721793948381,
+            -0.11490785431779599,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            0.4,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            -2.30627336570779,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9444481711166015,
+            1.3937266342922099,
+            2.0
+          ],
+          [
+            0.8241468159463985,
+            -3.203136682853895,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4012_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4012",
+      "source_spec": {
+        "name": "v3_test_layout_4012",
+        "seed": 4012,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.20278565099938,
+            4.0479459833467395,
+            1.3
+          ],
+          [
+            0.2500337699434291,
+            -0.2764537413977831,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4012_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4012",
+      "source_spec": {
+        "name": "v3_test_layout_4012",
+        "seed": 4012,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.20278565099938,
+            4.0479459833467395,
+            1.3
+          ],
+          [
+            0.2500337699434291,
+            -0.2764537413977831,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4012_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4012",
+      "source_spec": {
+        "name": "v3_test_layout_4012",
+        "seed": 4012,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.20278565099938,
+            4.0479459833467395,
+            1.3
+          ],
+          [
+            0.2500337699434291,
+            0.2764537413977831,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4012_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4012",
+      "source_spec": {
+        "name": "v3_test_layout_4012",
+        "seed": 4012,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.20278565099938,
+            4.0479459833467395,
+            1.3
+          ],
+          [
+            0.2500337699434291,
+            0.2764537413977831,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4013_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4013",
+      "source_spec": {
+        "name": "v3_test_layout_4013",
+        "seed": 4013,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9512995747991952,
+            3.908366451260799,
+            2.0
+          ],
+          [
+            -0.05344054751647914,
+            0.06378016095561401,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8350097379149024,
+            0.4,
+            2.0
+          ],
+          [
+            0.8397141088405697,
+            1.8179633865860134,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4013_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4013",
+      "source_spec": {
+        "name": "v3_test_layout_4013",
+        "seed": 4013,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9512995747991952,
+            3.908366451260799,
+            2.0
+          ],
+          [
+            -0.05344054751647914,
+            0.06378016095561401,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8350097379149024,
+            0.4,
+            2.0
+          ],
+          [
+            0.8397141088405697,
+            1.8179633865860134,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4013_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4013",
+      "source_spec": {
+        "name": "v3_test_layout_4013",
+        "seed": 4013,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9512995747991952,
+            3.908366451260799,
+            2.0
+          ],
+          [
+            -0.05344054751647914,
+            -0.06378016095561401,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8350097379149024,
+            0.4,
+            2.0
+          ],
+          [
+            0.8397141088405697,
+            -1.8179633865860134,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4013_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4013",
+      "source_spec": {
+        "name": "v3_test_layout_4013",
+        "seed": 4013,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9512995747991952,
+            3.908366451260799,
+            2.0
+          ],
+          [
+            -0.05344054751647914,
+            -0.06378016095561401,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8350097379149024,
+            0.4,
+            2.0
+          ],
+          [
+            0.8397141088405697,
+            -1.8179633865860134,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4014_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4014",
+      "source_spec": {
+        "name": "v3_test_layout_4014",
+        "seed": 4014,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9094173189313989,
+            4.723428194482577,
+            2.0
+          ],
+          [
+            0.348197385015529,
+            0.0547419543538476,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            0.4,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            2.2164560515951357,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            1.483543948404864,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            3.158228025797568,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4014_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4014",
+      "source_spec": {
+        "name": "v3_test_layout_4014",
+        "seed": 4014,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9094173189313989,
+            4.723428194482577,
+            2.0
+          ],
+          [
+            0.348197385015529,
+            0.0547419543538476,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            0.4,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            2.2164560515951357,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            1.483543948404864,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            3.158228025797568,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4014_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4014",
+      "source_spec": {
+        "name": "v3_test_layout_4014",
+        "seed": 4014,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9094173189313989,
+            4.723428194482577,
+            2.0
+          ],
+          [
+            0.348197385015529,
+            -0.0547419543538476,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            0.4,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            -2.2164560515951357,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            1.483543948404864,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            -3.158228025797568,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4014_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4014",
+      "source_spec": {
+        "name": "v3_test_layout_4014",
+        "seed": 4014,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9094173189313989,
+            4.723428194482577,
+            2.0
+          ],
+          [
+            0.348197385015529,
+            -0.0547419543538476,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            0.4,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            -2.2164560515951357,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9624251969076678,
+            1.483543948404864,
+            2.0
+          ],
+          [
+            1.2841186429350624,
+            -3.158228025797568,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4015_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4015",
+      "source_spec": {
+        "name": "v3_test_layout_4015",
+        "seed": 4015,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2469285809107573,
+            4.080671519870156,
+            0.8
+          ],
+          [
+            -0.23710763649568545,
+            0.23300291121917682,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4015_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4015",
+      "source_spec": {
+        "name": "v3_test_layout_4015",
+        "seed": 4015,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2469285809107573,
+            4.080671519870156,
+            0.8
+          ],
+          [
+            -0.23710763649568545,
+            0.23300291121917682,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4015_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4015",
+      "source_spec": {
+        "name": "v3_test_layout_4015",
+        "seed": 4015,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2469285809107573,
+            4.080671519870156,
+            0.8
+          ],
+          [
+            -0.23710763649568545,
+            -0.23300291121917682,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4015_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4015",
+      "source_spec": {
+        "name": "v3_test_layout_4015",
+        "seed": 4015,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2469285809107573,
+            4.080671519870156,
+            0.8
+          ],
+          [
+            -0.23710763649568545,
+            -0.23300291121917682,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4016_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4016",
+      "source_spec": {
+        "name": "v3_test_layout_4016",
+        "seed": 4016,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.892737449600545,
+            4.269825644367609,
+            2.0
+          ],
+          [
+            -0.09660689909100934,
+            0.025742403308459783,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2943084320096698,
+            0.4,
+            2.0
+          ],
+          [
+            0.9969160417140981,
+            1.9606552254922642,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4016_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4016",
+      "source_spec": {
+        "name": "v3_test_layout_4016",
+        "seed": 4016,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.892737449600545,
+            4.269825644367609,
+            2.0
+          ],
+          [
+            -0.09660689909100934,
+            0.025742403308459783,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2943084320096698,
+            0.4,
+            2.0
+          ],
+          [
+            0.9969160417140981,
+            1.9606552254922642,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4016_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4016",
+      "source_spec": {
+        "name": "v3_test_layout_4016",
+        "seed": 4016,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.892737449600545,
+            4.269825644367609,
+            2.0
+          ],
+          [
+            -0.09660689909100934,
+            -0.025742403308459783,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2943084320096698,
+            0.4,
+            2.0
+          ],
+          [
+            0.9969160417140981,
+            -1.9606552254922642,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4016_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4016",
+      "source_spec": {
+        "name": "v3_test_layout_4016",
+        "seed": 4016,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.892737449600545,
+            4.269825644367609,
+            2.0
+          ],
+          [
+            -0.09660689909100934,
+            -0.025742403308459783,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2943084320096698,
+            0.4,
+            2.0
+          ],
+          [
+            0.9969160417140981,
+            -1.9606552254922642,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4017_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4017",
+      "source_spec": {
+        "name": "v3_test_layout_4017",
+        "seed": 4017,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8632704345862019,
+            3.9123680306784023,
+            2.0
+          ],
+          [
+            -0.007819245448952128,
+            -0.01811997501556678,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            0.4,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            1.7380640403236345,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            1.9619359596763655,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            2.919032020161817,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4017_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4017",
+      "source_spec": {
+        "name": "v3_test_layout_4017",
+        "seed": 4017,
+        "kind": "gate_closed"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8632704345862019,
+            3.9123680306784023,
+            2.0
+          ],
+          [
+            -0.007819245448952128,
+            -0.01811997501556678,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            0.4,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            1.7380640403236345,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            1.9619359596763655,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            2.919032020161817,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4017_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4017",
+      "source_spec": {
+        "name": "v3_test_layout_4017",
+        "seed": 4017,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8632704345862019,
+            3.9123680306784023,
+            2.0
+          ],
+          [
+            -0.007819245448952128,
+            0.01811997501556678,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            0.4,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            -1.7380640403236345,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            1.9619359596763655,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            -2.919032020161817,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4017_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4017",
+      "source_spec": {
+        "name": "v3_test_layout_4017",
+        "seed": 4017,
+        "kind": "gate_closed"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8632704345862019,
+            3.9123680306784023,
+            2.0
+          ],
+          [
+            -0.007819245448952128,
+            0.01811997501556678,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            0.4,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            -1.7380640403236345,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0326036933484664,
+            1.9619359596763655,
+            2.0
+          ],
+          [
+            0.940117818518382,
+            -2.919032020161817,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4018_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4018",
+      "source_spec": {
+        "name": "v3_test_layout_4018",
+        "seed": 4018,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9569483968550946,
+            4.6354392169573115,
+            1.3
+          ],
+          [
+            0.07572479742563226,
+            -0.33707149360999483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4018_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4018",
+      "source_spec": {
+        "name": "v3_test_layout_4018",
+        "seed": 4018,
+        "kind": "barrier"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9569483968550946,
+            4.6354392169573115,
+            1.3
+          ],
+          [
+            0.07572479742563226,
+            -0.33707149360999483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4018_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4018",
+      "source_spec": {
+        "name": "v3_test_layout_4018",
+        "seed": 4018,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9569483968550946,
+            4.6354392169573115,
+            1.3
+          ],
+          [
+            0.07572479742563226,
+            0.33707149360999483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4018_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4018",
+      "source_spec": {
+        "name": "v3_test_layout_4018",
+        "seed": 4018,
+        "kind": "barrier"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9569483968550946,
+            4.6354392169573115,
+            1.3
+          ],
+          [
+            0.07572479742563226,
+            0.33707149360999483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4019_myP_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4019",
+      "source_spec": {
+        "name": "v3_test_layout_4019",
+        "seed": 4019,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2331312970755264,
+            4.754296556647766,
+            2.0
+          ],
+          [
+            0.329202778070266,
+            0.2958202244997443,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0471314655939858,
+            0.4,
+            2.0
+          ],
+          [
+            1.469334159405022,
+            2.472968502823627,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4019_myP_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4019",
+      "source_spec": {
+        "name": "v3_test_layout_4019",
+        "seed": 4019,
+        "kind": "gate_open"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2331312970755264,
+            4.754296556647766,
+            2.0
+          ],
+          [
+            0.329202778070266,
+            0.2958202244997443,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0471314655939858,
+            0.4,
+            2.0
+          ],
+          [
+            1.469334159405022,
+            2.472968502823627,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4019_myM_LR",
+      "split": "test",
+      "source_group": "v3_test_layout_4019",
+      "source_spec": {
+        "name": "v3_test_layout_4019",
+        "seed": 4019,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2331312970755264,
+            4.754296556647766,
+            2.0
+          ],
+          [
+            0.329202778070266,
+            -0.2958202244997443,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0471314655939858,
+            0.4,
+            2.0
+          ],
+          [
+            1.469334159405022,
+            -2.472968502823627,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v3_test_layout_4019_myM_RL",
+      "split": "test",
+      "source_group": "v3_test_layout_4019",
+      "source_spec": {
+        "name": "v3_test_layout_4019",
+        "seed": 4019,
+        "kind": "gate_open"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2331312970755264,
+            4.754296556647766,
+            2.0
+          ],
+          [
+            0.329202778070266,
+            -0.2958202244997443,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0471314655939858,
+            0.4,
+            2.0
+          ],
+          [
+            1.469334159405022,
+            -2.472968502823627,
+            1.0
+          ]
+        ]
+      ]
+    }
+  ],
+  "policies": [
+    "NoView",
+    "FixedMinus45",
+    "FixedPlus45",
+    "HeadingRule",
+    "PoseRidgeCV",
+    "MeanMapRidgeCV",
+    "SpatialRidgeCV",
+    "CNN_MSE",
+    "CNN_MSE_Rank"
+  ],
+  "model_checks": {
+    "SpatialRidgeCV": {
+      "probe_max_difference_s": 0.0,
+      "minimum_gain_s": 0.0
+    },
+    "PoseRidgeCV": {
+      "probe_max_difference_s": 0.0,
+      "minimum_gain_s": 0.15
+    },
+    "MeanMapRidgeCV": {
+      "probe_max_difference_s": 0.0,
+      "minimum_gain_s": 0.0
+    },
+    "CNN_MSE": {
+      "archived_decisions_matched": 24,
+      "cpu_cuda_max_difference_s": 6.211119625731953e-06,
+      "minimum_gain_s": 0.15,
+      "target_scale_s": 7.443235397338867
+    },
+    "CNN_MSE_Rank": {
+      "archived_decisions_matched": 24,
+      "cpu_cuda_max_difference_s": 7.1908498049388925e-06,
+      "minimum_gain_s": 0.15,
+      "target_scale_s": 7.443235397338867
+    }
+  },
+  "fp32_precision": "ieee"
+}

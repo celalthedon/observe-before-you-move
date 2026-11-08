@@ -1,0 +1,9 @@
+SEPARATION PASS | archived seeds=50 | fresh sources=20 | variants=80
+MODEL PASS | SpatialRidgeCV | prediction difference=0.00000000 s | decisions=24/24
+MODEL PASS | PoseRidgeCV | prediction difference=0.00000000 s | decisions=24/24
+MODEL PASS | MeanMapRidgeCV | prediction difference=0.00000000 s | decisions=24/24
+Traceback (most recent call last):
+  File "C:\Users\celal\obym-github\results\v3-preflight-jobs\20261108_200245_290060\worker.py", line 324, in <module>
+    assert difference <= 1e-4, (method, difference)
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: ('CNN_MSE', 0.0012200413550544909)

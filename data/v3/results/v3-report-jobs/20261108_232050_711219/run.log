@@ -1,0 +1,23 @@
+INTEGRITY PASS | 80/80 cases and episode artifacts
+PREDICTOR PASS | archived validation choices=24/24 for all five models | CPU FP32
+DECISIONS READY | 80 cases | frozen parameters only
+TEST | NoView             | safe=80/80 | mean=38.914 s | gain=+0.000 s | looks=0 | harmful=0
+TEST | FixedMinus45       | safe=80/80 | mean=38.655 s | gain=+0.259 s | looks=80 | harmful=52
+TEST | FixedPlus45        | safe=80/80 | mean=38.027 s | gain=+0.887 s | looks=80 | harmful=38
+TEST | HeadingRule        | safe=80/80 | mean=38.951 s | gain=-0.038 s | looks=40 | harmful=30
+TEST | PoseRidgeCV        | safe=80/80 | mean=38.130 s | gain=+0.784 s | looks=80 | harmful=44
+TEST | MeanMapRidgeCV     | safe=80/80 | mean=38.130 s | gain=+0.784 s | looks=80 | harmful=44
+TEST | SpatialRidgeCV     | safe=80/80 | mean=37.533 s | gain=+1.381 s | looks=64 | harmful=32
+TEST | CNN_MSE            | safe=80/80 | mean=37.881 s | gain=+1.033 s | looks=45 | harmful=18
+TEST | CNN_MSE_Rank       | safe=80/80 | mean=37.839 s | gain=+1.075 s | looks=50 | harmful=21
+PAIRED | baseline time minus SpatialRidgeCV time; positive means time saved
+Spatial vs NoView             | gain=+1.381 s | 95% CI=[+0.402, +2.515] s
+Spatial vs FixedMinus45       | gain=+1.122 s | 95% CI=[+0.420, +1.969] s
+Spatial vs FixedPlus45        | gain=+0.494 s | 95% CI=[-0.435, +1.585] s
+Spatial vs HeadingRule        | gain=+1.419 s | 95% CI=[+0.437, +2.558] s
+Spatial vs PoseRidgeCV        | gain=+0.597 s | 95% CI=[+0.063, +1.303] s
+Spatial vs MeanMapRidgeCV     | gain=+0.597 s | 95% CI=[+0.063, +1.303] s
+Spatial vs CNN_MSE            | gain=+0.348 s | 95% CI=[-0.354, +1.274] s
+Spatial vs CNN_MSE_Rank       | gain=+0.307 s | 95% CI=[-0.436, +1.245] s
+FINAL REPORT READY | 240 executed test episodes | 720 policy outcomes
+OUTPUT | C:\Users\celal\obym-github\results\v3-final-test\94fd47e48b4f\reports

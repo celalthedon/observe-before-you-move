@@ -1,0 +1,9 @@
+SEPARATION PASS | archived seeds=50 | fresh sources=20 | variants=80
+MODEL PASS | SpatialRidgeCV | prediction difference=0.00000000 s | decisions=24/24
+MODEL PASS | PoseRidgeCV | prediction difference=0.00000000 s | decisions=24/24
+MODEL PASS | MeanMapRidgeCV | prediction difference=0.00000000 s | decisions=24/24
+PRECISION | IEEE FP32 | TF32 disabled
+MODEL PASS | CNN_MSE | archived decisions=24/24 | CPU/CUDA difference=6.211119625731953e-06
+MODEL PASS | CNN_MSE_Rank | archived decisions=24/24 | CPU/CUDA difference=7.1908498049388925e-06
+TEST PREFLIGHT READY | C:\Users\celal\obym-github\results\v3-final-protocol\94fd47e48b4f\preflight\test_manifest.json
+Navigation episodes executed: 0

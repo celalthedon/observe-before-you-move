@@ -1,0 +1,38 @@
+{
+  "name": "train_layout_1000_myP_LR",
+  "split": "train",
+  "source_spec": {
+    "name": "train_layout_1000",
+    "family_id": "layout_1000",
+    "split": "train",
+    "seed": 1000,
+    "kind": "barrier",
+    "source_method": "Optimistic",
+    "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+  },
+  "mirror_y": 1,
+  "travel_direction": 1,
+  "start_xy": [
+    -3.5,
+    0.0
+  ],
+  "goal_xy": [
+    3.5,
+    0.0
+  ],
+  "initial_yaw_rad": 0.0,
+  "geometry": [
+    [
+      [
+        1.0128314427850376,
+        4.405762770509495,
+        1.3
+      ],
+      [
+        -0.020340741874422252,
+        -0.20772644021872483,
+        0.65
+      ]
+    ]
+  ]
+}

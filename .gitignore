@@ -12,4 +12,8 @@ build/
 dist/
 *.egg-info/
 results/generated/
-results/
+/results/
+
+# Detached V3 trace archives expand here.
+/data/v3/results/v3-final-test/*/results/
+/data/v3/results/v3-initial-dataset/results/

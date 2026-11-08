@@ -1,0 +1,6190 @@
+{
+  "revision": "task_value_v2_postturn_three_states_v1",
+  "base_config": {
+    "revision": "task_value_smoke_v1",
+    "split": "train",
+    "scenes": [
+      {
+        "name": "train_layout_1000",
+        "family_id": "layout_1000",
+        "split": "train",
+        "seed": 1000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+      },
+      {
+        "name": "train_layout_1001",
+        "family_id": "layout_1001",
+        "split": "train",
+        "seed": 1001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "058d930ab577df7c0c3bee9070d71e50c3042eea6ec006c40db2e902211c32ba"
+      },
+      {
+        "name": "train_layout_1002",
+        "family_id": "layout_1002",
+        "split": "train",
+        "seed": 1002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "2b88087b0002858f44da7925d20278f59628287b26b956b26ab0f0dd11746385"
+      }
+    ],
+    "geometry": [
+      [
+        [
+          [
+            1.0128314427850376,
+            4.405762770509495,
+            1.3
+          ],
+          [
+            -0.020340741874422252,
+            -0.20772644021872483,
+            0.65
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1.0675569571419705,
+            3.5235507017304974,
+            2.0
+          ],
+          [
+            -0.21861729618264922,
+            0.25052304517878743,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9206541466672544,
+            0.4,
+            2.0
+          ],
+          [
+            0.7754882557219632,
+            1.8122983960440362,
+            1.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.9284926956898696,
+            4.035784006506421,
+            2.0
+          ],
+          [
+            0.1733286219477338,
+            -0.07735565662656191,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            0.4,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            1.7405363466266486,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            1.9594636533733514,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            2.9202681733133242,
+            1.0
+          ]
+        ]
+      ]
+    ],
+    "state_fractions": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "offsets_deg": [
+      -45,
+      0,
+      45
+    ],
+    "continuation": "Optimistic_without_additional_views",
+    "label": "baseline_sim_time_minus_single_view_sim_time",
+    "max_sim_time": 180.0,
+    "max_decisions": 300,
+    "channels": [
+      "free",
+      "occupied",
+      "unknown",
+      "route_unknown",
+      "candidate_position",
+      "predicted_new_view",
+      "valid_world"
+    ],
+    "patch_size": 80,
+    "grid_res": 0.1,
+    "camera": {
+      "width": 320,
+      "height": 240,
+      "fov": 60,
+      "near": 0.05,
+      "far": 15.0
+    },
+    "view_config": {
+      "lookahead_m": 2.0,
+      "corridor_radius_m": 0.6,
+      "max_view_range_m": 4.0,
+      "gain_seconds_per_m2": 3.0,
+      "minimum_score_s": 0.15
+    },
+    "start_xy": [
+      -3.5,
+      0
+    ],
+    "goal_xy": [
+      3.5,
+      0
+    ],
+    "goal_tolerance": 0.25,
+    "nav_speed": 0.4,
+    "turn_speed": 1.5707963267948966,
+    "sensor_period": 0.1,
+    "robot_radius": 0.25,
+    "clearance": 0.05,
+    "voxel": [
+      0.02,
+      0.4,
+      4
+    ]
+  },
+  "cases": [
+    {
+      "name": "train_layout_1000_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1000",
+        "family_id": "layout_1000",
+        "split": "train",
+        "seed": 1000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0128314427850376,
+            4.405762770509495,
+            1.3
+          ],
+          [
+            -0.020340741874422252,
+            -0.20772644021872483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1000_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1000",
+        "family_id": "layout_1000",
+        "split": "train",
+        "seed": 1000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0128314427850376,
+            4.405762770509495,
+            1.3
+          ],
+          [
+            -0.020340741874422252,
+            -0.20772644021872483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1000_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1000",
+        "family_id": "layout_1000",
+        "split": "train",
+        "seed": 1000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0128314427850376,
+            4.405762770509495,
+            1.3
+          ],
+          [
+            -0.020340741874422252,
+            0.20772644021872483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1000_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1000",
+        "family_id": "layout_1000",
+        "split": "train",
+        "seed": 1000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "3722bf706cc76e1c8141012f95e3a2ff3ea89f78b6652c1234dc4e02064cc6cb"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0128314427850376,
+            4.405762770509495,
+            1.3
+          ],
+          [
+            -0.020340741874422252,
+            0.20772644021872483,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1001_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1001",
+        "family_id": "layout_1001",
+        "split": "train",
+        "seed": 1001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "058d930ab577df7c0c3bee9070d71e50c3042eea6ec006c40db2e902211c32ba"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0675569571419705,
+            3.5235507017304974,
+            2.0
+          ],
+          [
+            -0.21861729618264922,
+            0.25052304517878743,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9206541466672544,
+            0.4,
+            2.0
+          ],
+          [
+            0.7754882557219632,
+            1.8122983960440362,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1001_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1001",
+        "family_id": "layout_1001",
+        "split": "train",
+        "seed": 1001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "058d930ab577df7c0c3bee9070d71e50c3042eea6ec006c40db2e902211c32ba"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0675569571419705,
+            3.5235507017304974,
+            2.0
+          ],
+          [
+            -0.21861729618264922,
+            0.25052304517878743,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9206541466672544,
+            0.4,
+            2.0
+          ],
+          [
+            0.7754882557219632,
+            1.8122983960440362,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1001_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1001",
+        "family_id": "layout_1001",
+        "split": "train",
+        "seed": 1001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "058d930ab577df7c0c3bee9070d71e50c3042eea6ec006c40db2e902211c32ba"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0675569571419705,
+            3.5235507017304974,
+            2.0
+          ],
+          [
+            -0.21861729618264922,
+            -0.25052304517878743,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9206541466672544,
+            0.4,
+            2.0
+          ],
+          [
+            0.7754882557219632,
+            -1.8122983960440362,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1001_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1001",
+        "family_id": "layout_1001",
+        "split": "train",
+        "seed": 1001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "058d930ab577df7c0c3bee9070d71e50c3042eea6ec006c40db2e902211c32ba"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0675569571419705,
+            3.5235507017304974,
+            2.0
+          ],
+          [
+            -0.21861729618264922,
+            -0.25052304517878743,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9206541466672544,
+            0.4,
+            2.0
+          ],
+          [
+            0.7754882557219632,
+            -1.8122983960440362,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1002_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1002",
+        "family_id": "layout_1002",
+        "split": "train",
+        "seed": 1002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "2b88087b0002858f44da7925d20278f59628287b26b956b26ab0f0dd11746385"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9284926956898696,
+            4.035784006506421,
+            2.0
+          ],
+          [
+            0.1733286219477338,
+            -0.07735565662656191,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            0.4,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            1.7405363466266486,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            1.9594636533733514,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            2.9202681733133242,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1002_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1002",
+        "family_id": "layout_1002",
+        "split": "train",
+        "seed": 1002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "2b88087b0002858f44da7925d20278f59628287b26b956b26ab0f0dd11746385"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9284926956898696,
+            4.035784006506421,
+            2.0
+          ],
+          [
+            0.1733286219477338,
+            -0.07735565662656191,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            0.4,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            1.7405363466266486,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            1.9594636533733514,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            2.9202681733133242,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1002_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1002",
+        "family_id": "layout_1002",
+        "split": "train",
+        "seed": 1002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "2b88087b0002858f44da7925d20278f59628287b26b956b26ab0f0dd11746385"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9284926956898696,
+            4.035784006506421,
+            2.0
+          ],
+          [
+            0.1733286219477338,
+            0.07735565662656191,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            0.4,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            -1.7405363466266486,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            1.9594636533733514,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            -2.9202681733133242,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1002_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1002",
+        "family_id": "layout_1002",
+        "split": "train",
+        "seed": 1002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "2b88087b0002858f44da7925d20278f59628287b26b956b26ab0f0dd11746385"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9284926956898696,
+            4.035784006506421,
+            2.0
+          ],
+          [
+            0.1733286219477338,
+            0.07735565662656191,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            0.4,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            -1.7405363466266486,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1329367177177745,
+            1.9594636533733514,
+            2.0
+          ],
+          [
+            1.2040433286515557,
+            -2.9202681733133242,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1003_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1003",
+        "family_id": "layout_1003",
+        "split": "train",
+        "seed": 1003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "100ff8b755f4c00147dc947dd9d0f2bea9e124cf12165973af175c4d53418f23"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.81265442096118,
+            3.885058715328233,
+            2.0
+          ],
+          [
+            -0.0037244709678040944,
+            0.1125540902389297,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1003_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1003",
+        "family_id": "layout_1003",
+        "split": "train",
+        "seed": 1003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "100ff8b755f4c00147dc947dd9d0f2bea9e124cf12165973af175c4d53418f23"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.81265442096118,
+            3.885058715328233,
+            2.0
+          ],
+          [
+            -0.0037244709678040944,
+            0.1125540902389297,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1003_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1003",
+        "family_id": "layout_1003",
+        "split": "train",
+        "seed": 1003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "100ff8b755f4c00147dc947dd9d0f2bea9e124cf12165973af175c4d53418f23"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.81265442096118,
+            3.885058715328233,
+            2.0
+          ],
+          [
+            -0.0037244709678040944,
+            -0.1125540902389297,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1003_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1003",
+        "family_id": "layout_1003",
+        "split": "train",
+        "seed": 1003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "100ff8b755f4c00147dc947dd9d0f2bea9e124cf12165973af175c4d53418f23"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.81265442096118,
+            3.885058715328233,
+            2.0
+          ],
+          [
+            -0.0037244709678040944,
+            -0.1125540902389297,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1004_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1004",
+        "family_id": "layout_1004",
+        "split": "train",
+        "seed": 1004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "058a279d52420001c7cf51e18fc9253e68813e17ba4ce14b5114d2d2589cc297"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.700528271644429,
+            3.695226968191447,
+            2.0
+          ],
+          [
+            -0.25306584429098605,
+            -0.08354175413693377,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.302255660749591,
+            0.4,
+            2.0
+          ],
+          [
+            0.748326121906024,
+            1.5640717299587898,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1004_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1004",
+        "family_id": "layout_1004",
+        "split": "train",
+        "seed": 1004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "058a279d52420001c7cf51e18fc9253e68813e17ba4ce14b5114d2d2589cc297"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.700528271644429,
+            3.695226968191447,
+            2.0
+          ],
+          [
+            -0.25306584429098605,
+            -0.08354175413693377,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.302255660749591,
+            0.4,
+            2.0
+          ],
+          [
+            0.748326121906024,
+            1.5640717299587898,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1004_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1004",
+        "family_id": "layout_1004",
+        "split": "train",
+        "seed": 1004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "058a279d52420001c7cf51e18fc9253e68813e17ba4ce14b5114d2d2589cc297"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.700528271644429,
+            3.695226968191447,
+            2.0
+          ],
+          [
+            -0.25306584429098605,
+            0.08354175413693377,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.302255660749591,
+            0.4,
+            2.0
+          ],
+          [
+            0.748326121906024,
+            -1.5640717299587898,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1004_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1004",
+        "family_id": "layout_1004",
+        "split": "train",
+        "seed": 1004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "058a279d52420001c7cf51e18fc9253e68813e17ba4ce14b5114d2d2589cc297"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.700528271644429,
+            3.695226968191447,
+            2.0
+          ],
+          [
+            -0.25306584429098605,
+            0.08354175413693377,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.302255660749591,
+            0.4,
+            2.0
+          ],
+          [
+            0.748326121906024,
+            -1.5640717299587898,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1005_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1005",
+        "family_id": "layout_1005",
+        "split": "train",
+        "seed": 1005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "6fbd82ba455a56c14bb38930cb1ab97c53653136893c9f20cdc63b3f1ba32cc5"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7493315038407362,
+            4.895843063582905,
+            2.0
+          ],
+          [
+            -0.14890118014256068,
+            0.09699063403434899,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            0.4,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            2.3449121658258014,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            1.3550878341741983,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            3.2224560829129008,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1005_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1005",
+        "family_id": "layout_1005",
+        "split": "train",
+        "seed": 1005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "6fbd82ba455a56c14bb38930cb1ab97c53653136893c9f20cdc63b3f1ba32cc5"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7493315038407362,
+            4.895843063582905,
+            2.0
+          ],
+          [
+            -0.14890118014256068,
+            0.09699063403434899,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            0.4,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            2.3449121658258014,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            1.3550878341741983,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            3.2224560829129008,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1005_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1005",
+        "family_id": "layout_1005",
+        "split": "train",
+        "seed": 1005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "6fbd82ba455a56c14bb38930cb1ab97c53653136893c9f20cdc63b3f1ba32cc5"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7493315038407362,
+            4.895843063582905,
+            2.0
+          ],
+          [
+            -0.14890118014256068,
+            -0.09699063403434899,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            0.4,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            -2.3449121658258014,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            1.3550878341741983,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            -3.2224560829129008,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1005_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1005",
+        "family_id": "layout_1005",
+        "split": "train",
+        "seed": 1005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "6fbd82ba455a56c14bb38930cb1ab97c53653136893c9f20cdc63b3f1ba32cc5"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7493315038407362,
+            4.895843063582905,
+            2.0
+          ],
+          [
+            -0.14890118014256068,
+            -0.09699063403434899,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            0.4,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            -2.3449121658258014,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.386033202071824,
+            1.3550878341741983,
+            2.0
+          ],
+          [
+            0.9187811728137194,
+            -3.2224560829129008,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1006_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1006",
+        "family_id": "layout_1006",
+        "split": "train",
+        "seed": 1006,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "9ff6d121a7b7a3eab191fad596ba1eeba7652eaeb2ba2ab05085007790a6cfde"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9021528601436947,
+            4.4012854156994825,
+            1.3
+          ],
+          [
+            -0.14151809041357713,
+            -0.1836992887130988,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1006_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1006",
+        "family_id": "layout_1006",
+        "split": "train",
+        "seed": 1006,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "9ff6d121a7b7a3eab191fad596ba1eeba7652eaeb2ba2ab05085007790a6cfde"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9021528601436947,
+            4.4012854156994825,
+            1.3
+          ],
+          [
+            -0.14151809041357713,
+            -0.1836992887130988,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1006_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1006",
+        "family_id": "layout_1006",
+        "split": "train",
+        "seed": 1006,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "9ff6d121a7b7a3eab191fad596ba1eeba7652eaeb2ba2ab05085007790a6cfde"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9021528601436947,
+            4.4012854156994825,
+            1.3
+          ],
+          [
+            -0.14151809041357713,
+            0.1836992887130988,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1006_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1006",
+        "family_id": "layout_1006",
+        "split": "train",
+        "seed": 1006,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "9ff6d121a7b7a3eab191fad596ba1eeba7652eaeb2ba2ab05085007790a6cfde"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9021528601436947,
+            4.4012854156994825,
+            1.3
+          ],
+          [
+            -0.14151809041357713,
+            0.1836992887130988,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1007_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1007",
+        "family_id": "layout_1007",
+        "split": "train",
+        "seed": 1007,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "7345f793b54eb270cadcf233468551e6d0d087c6b540fb6601023a75cf2994a0"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7427349624765314,
+            4.723970517766915,
+            2.0
+          ],
+          [
+            0.10004995904306008,
+            -0.21238332862064607,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3372022909709957,
+            0.4,
+            2.0
+          ],
+          [
+            1.1400185857668237,
+            1.9496019302628114,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1007_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1007",
+        "family_id": "layout_1007",
+        "split": "train",
+        "seed": 1007,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "7345f793b54eb270cadcf233468551e6d0d087c6b540fb6601023a75cf2994a0"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7427349624765314,
+            4.723970517766915,
+            2.0
+          ],
+          [
+            0.10004995904306008,
+            -0.21238332862064607,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3372022909709957,
+            0.4,
+            2.0
+          ],
+          [
+            1.1400185857668237,
+            1.9496019302628114,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1007_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1007",
+        "family_id": "layout_1007",
+        "split": "train",
+        "seed": 1007,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "7345f793b54eb270cadcf233468551e6d0d087c6b540fb6601023a75cf2994a0"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7427349624765314,
+            4.723970517766915,
+            2.0
+          ],
+          [
+            0.10004995904306008,
+            0.21238332862064607,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3372022909709957,
+            0.4,
+            2.0
+          ],
+          [
+            1.1400185857668237,
+            -1.9496019302628114,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1007_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1007",
+        "family_id": "layout_1007",
+        "split": "train",
+        "seed": 1007,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "7345f793b54eb270cadcf233468551e6d0d087c6b540fb6601023a75cf2994a0"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7427349624765314,
+            4.723970517766915,
+            2.0
+          ],
+          [
+            0.10004995904306008,
+            0.21238332862064607,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3372022909709957,
+            0.4,
+            2.0
+          ],
+          [
+            1.1400185857668237,
+            -1.9496019302628114,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1008_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1008",
+        "family_id": "layout_1008",
+        "split": "train",
+        "seed": 1008,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "d9ddd8447e7021bf1c811af7def67a49974ffe30f69bfa96698b8ddfd53cc963"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8003516494327712,
+            4.719576121593169,
+            2.0
+          ],
+          [
+            -0.19779701955003073,
+            0.3386386181842025,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            0.4,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            2.498426678980787,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            1.2015733210192128,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            3.2992133394903935,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1008_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1008",
+        "family_id": "layout_1008",
+        "split": "train",
+        "seed": 1008,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "d9ddd8447e7021bf1c811af7def67a49974ffe30f69bfa96698b8ddfd53cc963"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8003516494327712,
+            4.719576121593169,
+            2.0
+          ],
+          [
+            -0.19779701955003073,
+            0.3386386181842025,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            0.4,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            2.498426678980787,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            1.2015733210192128,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            3.2992133394903935,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1008_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1008",
+        "family_id": "layout_1008",
+        "split": "train",
+        "seed": 1008,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "d9ddd8447e7021bf1c811af7def67a49974ffe30f69bfa96698b8ddfd53cc963"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8003516494327712,
+            4.719576121593169,
+            2.0
+          ],
+          [
+            -0.19779701955003073,
+            -0.3386386181842025,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            0.4,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            -2.498426678980787,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            1.2015733210192128,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            -3.2992133394903935,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1008_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1008",
+        "family_id": "layout_1008",
+        "split": "train",
+        "seed": 1008,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "d9ddd8447e7021bf1c811af7def67a49974ffe30f69bfa96698b8ddfd53cc963"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8003516494327712,
+            4.719576121593169,
+            2.0
+          ],
+          [
+            -0.19779701955003073,
+            -0.3386386181842025,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            0.4,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            -2.498426678980787,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.3065654130009507,
+            1.2015733210192128,
+            2.0
+          ],
+          [
+            0.8556615116668302,
+            -3.2992133394903935,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1009_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1009",
+        "family_id": "layout_1009",
+        "split": "train",
+        "seed": 1009,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9dd05899cc65781de46a11112d9e7e97805a009770e9cba824ba1676e5aa233e"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7339002772320635,
+            3.9903733815092925,
+            2.0
+          ],
+          [
+            -0.3151039765487612,
+            -0.15307150710157194,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1009_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1009",
+        "family_id": "layout_1009",
+        "split": "train",
+        "seed": 1009,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9dd05899cc65781de46a11112d9e7e97805a009770e9cba824ba1676e5aa233e"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7339002772320635,
+            3.9903733815092925,
+            2.0
+          ],
+          [
+            -0.3151039765487612,
+            -0.15307150710157194,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1009_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1009",
+        "family_id": "layout_1009",
+        "split": "train",
+        "seed": 1009,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9dd05899cc65781de46a11112d9e7e97805a009770e9cba824ba1676e5aa233e"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7339002772320635,
+            3.9903733815092925,
+            2.0
+          ],
+          [
+            -0.3151039765487612,
+            0.15307150710157194,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1009_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1009",
+        "family_id": "layout_1009",
+        "split": "train",
+        "seed": 1009,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9dd05899cc65781de46a11112d9e7e97805a009770e9cba824ba1676e5aa233e"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7339002772320635,
+            3.9903733815092925,
+            2.0
+          ],
+          [
+            -0.3151039765487612,
+            0.15307150710157194,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1010_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1010",
+        "family_id": "layout_1010",
+        "split": "train",
+        "seed": 1010,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "0705ad4d2540aba53b205d4c85e081365f454d6241fc719d5632333af8253e10"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7569953697769434,
+            4.303708596855265,
+            2.0
+          ],
+          [
+            0.2923737131794225,
+            0.3370260942221621,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476869135774373,
+            0.4,
+            2.0
+          ],
+          [
+            1.294714854856613,
+            2.2888803926497943,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1010_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1010",
+        "family_id": "layout_1010",
+        "split": "train",
+        "seed": 1010,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "0705ad4d2540aba53b205d4c85e081365f454d6241fc719d5632333af8253e10"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7569953697769434,
+            4.303708596855265,
+            2.0
+          ],
+          [
+            0.2923737131794225,
+            0.3370260942221621,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476869135774373,
+            0.4,
+            2.0
+          ],
+          [
+            1.294714854856613,
+            2.2888803926497943,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1010_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1010",
+        "family_id": "layout_1010",
+        "split": "train",
+        "seed": 1010,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "0705ad4d2540aba53b205d4c85e081365f454d6241fc719d5632333af8253e10"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7569953697769434,
+            4.303708596855265,
+            2.0
+          ],
+          [
+            0.2923737131794225,
+            -0.3370260942221621,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476869135774373,
+            0.4,
+            2.0
+          ],
+          [
+            1.294714854856613,
+            -2.2888803926497943,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1010_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1010",
+        "family_id": "layout_1010",
+        "split": "train",
+        "seed": 1010,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "0705ad4d2540aba53b205d4c85e081365f454d6241fc719d5632333af8253e10"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7569953697769434,
+            4.303708596855265,
+            2.0
+          ],
+          [
+            0.2923737131794225,
+            -0.3370260942221621,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2476869135774373,
+            0.4,
+            2.0
+          ],
+          [
+            1.294714854856613,
+            -2.2888803926497943,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1011_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1011",
+        "family_id": "layout_1011",
+        "split": "train",
+        "seed": 1011,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "40080c70389137e4bdcc8c6515d2fde93a5f9ef718d2d1531de82147291b1d46"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.870474904210262,
+            4.344985303264093,
+            2.0
+          ],
+          [
+            -0.20117990574220718,
+            -0.2925727134248329,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            0.4,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            1.6799199382072139,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            2.020080061792786,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            2.889959969103607,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1011_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1011",
+        "family_id": "layout_1011",
+        "split": "train",
+        "seed": 1011,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "40080c70389137e4bdcc8c6515d2fde93a5f9ef718d2d1531de82147291b1d46"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.870474904210262,
+            4.344985303264093,
+            2.0
+          ],
+          [
+            -0.20117990574220718,
+            -0.2925727134248329,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            0.4,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            1.6799199382072139,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            2.020080061792786,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            2.889959969103607,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1011_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1011",
+        "family_id": "layout_1011",
+        "split": "train",
+        "seed": 1011,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "40080c70389137e4bdcc8c6515d2fde93a5f9ef718d2d1531de82147291b1d46"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.870474904210262,
+            4.344985303264093,
+            2.0
+          ],
+          [
+            -0.20117990574220718,
+            0.2925727134248329,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            0.4,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            -1.6799199382072139,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            2.020080061792786,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            -2.889959969103607,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1011_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1011",
+        "family_id": "layout_1011",
+        "split": "train",
+        "seed": 1011,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "40080c70389137e4bdcc8c6515d2fde93a5f9ef718d2d1531de82147291b1d46"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.870474904210262,
+            4.344985303264093,
+            2.0
+          ],
+          [
+            -0.20117990574220718,
+            0.2925727134248329,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            0.4,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            -1.6799199382072139,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.038598127120529,
+            2.020080061792786,
+            2.0
+          ],
+          [
+            0.7533566099231883,
+            -2.889959969103607,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1012_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1012",
+        "family_id": "layout_1012",
+        "split": "train",
+        "seed": 1012,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "b045bff2bfdf5186b445c85a7d350f3cb949972e4feaaeb9540b159a2bf0c799"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8837922899623833,
+            4.670970026566988,
+            2.0
+          ],
+          [
+            -0.18309450631242702,
+            0.2522804749269272,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1012_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1012",
+        "family_id": "layout_1012",
+        "split": "train",
+        "seed": 1012,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "b045bff2bfdf5186b445c85a7d350f3cb949972e4feaaeb9540b159a2bf0c799"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8837922899623833,
+            4.670970026566988,
+            2.0
+          ],
+          [
+            -0.18309450631242702,
+            0.2522804749269272,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1012_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1012",
+        "family_id": "layout_1012",
+        "split": "train",
+        "seed": 1012,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "b045bff2bfdf5186b445c85a7d350f3cb949972e4feaaeb9540b159a2bf0c799"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8837922899623833,
+            4.670970026566988,
+            2.0
+          ],
+          [
+            -0.18309450631242702,
+            -0.2522804749269272,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1012_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1012",
+        "family_id": "layout_1012",
+        "split": "train",
+        "seed": 1012,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "b045bff2bfdf5186b445c85a7d350f3cb949972e4feaaeb9540b159a2bf0c799"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8837922899623833,
+            4.670970026566988,
+            2.0
+          ],
+          [
+            -0.18309450631242702,
+            -0.2522804749269272,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1013_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1013",
+        "family_id": "layout_1013",
+        "split": "train",
+        "seed": 1013,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "304accd3dfe94a8fb2b121755f176c51a8938d45df66de0989f7e66969015424"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.1766957491837127,
+            3.618469207361384,
+            2.0
+          ],
+          [
+            0.12086171390773842,
+            -0.036702044831685654,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9437123398772105,
+            0.4,
+            2.0
+          ],
+          [
+            1.1810657584382,
+            1.5725325588490064,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1013_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1013",
+        "family_id": "layout_1013",
+        "split": "train",
+        "seed": 1013,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "304accd3dfe94a8fb2b121755f176c51a8938d45df66de0989f7e66969015424"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.1766957491837127,
+            3.618469207361384,
+            2.0
+          ],
+          [
+            0.12086171390773842,
+            -0.036702044831685654,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9437123398772105,
+            0.4,
+            2.0
+          ],
+          [
+            1.1810657584382,
+            1.5725325588490064,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1013_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1013",
+        "family_id": "layout_1013",
+        "split": "train",
+        "seed": 1013,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "304accd3dfe94a8fb2b121755f176c51a8938d45df66de0989f7e66969015424"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.1766957491837127,
+            3.618469207361384,
+            2.0
+          ],
+          [
+            0.12086171390773842,
+            0.036702044831685654,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9437123398772105,
+            0.4,
+            2.0
+          ],
+          [
+            1.1810657584382,
+            -1.5725325588490064,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1013_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1013",
+        "family_id": "layout_1013",
+        "split": "train",
+        "seed": 1013,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "304accd3dfe94a8fb2b121755f176c51a8938d45df66de0989f7e66969015424"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.1766957491837127,
+            3.618469207361384,
+            2.0
+          ],
+          [
+            0.12086171390773842,
+            0.036702044831685654,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9437123398772105,
+            0.4,
+            2.0
+          ],
+          [
+            1.1810657584382,
+            -1.5725325588490064,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1014_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1014",
+        "family_id": "layout_1014",
+        "split": "train",
+        "seed": 1014,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "cddf6d412262180368577f32d6749cd121a4c33a701a9bb39cbf4c02bf4609d9"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9613144009736799,
+            4.378553457950622,
+            2.0
+          ],
+          [
+            0.27857536488952794,
+            0.34480644829203333,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            0.4,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            2.334083177267344,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            1.3659168227326557,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            3.217041588633672,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1014_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1014",
+        "family_id": "layout_1014",
+        "split": "train",
+        "seed": 1014,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "cddf6d412262180368577f32d6749cd121a4c33a701a9bb39cbf4c02bf4609d9"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9613144009736799,
+            4.378553457950622,
+            2.0
+          ],
+          [
+            0.27857536488952794,
+            0.34480644829203333,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            0.4,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            2.334083177267344,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            1.3659168227326557,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            3.217041588633672,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1014_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1014",
+        "family_id": "layout_1014",
+        "split": "train",
+        "seed": 1014,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "cddf6d412262180368577f32d6749cd121a4c33a701a9bb39cbf4c02bf4609d9"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9613144009736799,
+            4.378553457950622,
+            2.0
+          ],
+          [
+            0.27857536488952794,
+            -0.34480644829203333,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            0.4,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            -2.334083177267344,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            1.3659168227326557,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            -3.217041588633672,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1014_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1014",
+        "family_id": "layout_1014",
+        "split": "train",
+        "seed": 1014,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "cddf6d412262180368577f32d6749cd121a4c33a701a9bb39cbf4c02bf4609d9"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9613144009736799,
+            4.378553457950622,
+            2.0
+          ],
+          [
+            0.27857536488952794,
+            -0.34480644829203333,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            0.4,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            -2.334083177267344,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9397780449860547,
+            1.3659168227326557,
+            2.0
+          ],
+          [
+            1.229121587869395,
+            -3.217041588633672,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1015_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1015",
+        "family_id": "layout_1015",
+        "split": "train",
+        "seed": 1015,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "e5e1f01c5ff65f9c166ad0f199afd34185b0bd089b61d28692c2ad25eba794cd"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9159417611404349,
+            4.410601742911048,
+            2.0
+          ],
+          [
+            0.09891358387244542,
+            -0.2849452868647474,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1015_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1015",
+        "family_id": "layout_1015",
+        "split": "train",
+        "seed": 1015,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "e5e1f01c5ff65f9c166ad0f199afd34185b0bd089b61d28692c2ad25eba794cd"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9159417611404349,
+            4.410601742911048,
+            2.0
+          ],
+          [
+            0.09891358387244542,
+            -0.2849452868647474,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1015_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1015",
+        "family_id": "layout_1015",
+        "split": "train",
+        "seed": 1015,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "e5e1f01c5ff65f9c166ad0f199afd34185b0bd089b61d28692c2ad25eba794cd"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9159417611404349,
+            4.410601742911048,
+            2.0
+          ],
+          [
+            0.09891358387244542,
+            0.2849452868647474,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1015_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1015",
+        "family_id": "layout_1015",
+        "split": "train",
+        "seed": 1015,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "e5e1f01c5ff65f9c166ad0f199afd34185b0bd089b61d28692c2ad25eba794cd"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9159417611404349,
+            4.410601742911048,
+            2.0
+          ],
+          [
+            0.09891358387244542,
+            0.2849452868647474,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1016_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1016",
+        "family_id": "layout_1016",
+        "split": "train",
+        "seed": 1016,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "49873e30edaef940c0e6b3ab0565faea5637a1fb419cb418598e14bd766381de"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8367949580273112,
+            4.164040986641467,
+            2.0
+          ],
+          [
+            -0.10246323228069054,
+            0.05579536873483265,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0904286995025296,
+            0.4,
+            2.0
+          ],
+          [
+            0.8611485964842298,
+            1.9378158620555663,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1016_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1016",
+        "family_id": "layout_1016",
+        "split": "train",
+        "seed": 1016,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "49873e30edaef940c0e6b3ab0565faea5637a1fb419cb418598e14bd766381de"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8367949580273112,
+            4.164040986641467,
+            2.0
+          ],
+          [
+            -0.10246323228069054,
+            0.05579536873483265,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0904286995025296,
+            0.4,
+            2.0
+          ],
+          [
+            0.8611485964842298,
+            1.9378158620555663,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1016_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1016",
+        "family_id": "layout_1016",
+        "split": "train",
+        "seed": 1016,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "49873e30edaef940c0e6b3ab0565faea5637a1fb419cb418598e14bd766381de"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8367949580273112,
+            4.164040986641467,
+            2.0
+          ],
+          [
+            -0.10246323228069054,
+            -0.05579536873483265,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0904286995025296,
+            0.4,
+            2.0
+          ],
+          [
+            0.8611485964842298,
+            -1.9378158620555663,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1016_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1016",
+        "family_id": "layout_1016",
+        "split": "train",
+        "seed": 1016,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "49873e30edaef940c0e6b3ab0565faea5637a1fb419cb418598e14bd766381de"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8367949580273112,
+            4.164040986641467,
+            2.0
+          ],
+          [
+            -0.10246323228069054,
+            -0.05579536873483265,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0904286995025296,
+            0.4,
+            2.0
+          ],
+          [
+            0.8611485964842298,
+            -1.9378158620555663,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1017_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1017",
+        "family_id": "layout_1017",
+        "split": "train",
+        "seed": 1017,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "06499f5d734540342e0aa699ce2d94e25408eb732f67eb1534397ea3296570a9"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2510110525861657,
+            4.731997810450721,
+            2.0
+          ],
+          [
+            0.33080557445397085,
+            0.06973521291684731,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            0.4,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            2.235734118142208,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            1.4642658818577918,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            3.1678670590711038,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1017_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1017",
+        "family_id": "layout_1017",
+        "split": "train",
+        "seed": 1017,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "06499f5d734540342e0aa699ce2d94e25408eb732f67eb1534397ea3296570a9"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2510110525861657,
+            4.731997810450721,
+            2.0
+          ],
+          [
+            0.33080557445397085,
+            0.06973521291684731,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            0.4,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            2.235734118142208,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            1.4642658818577918,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            3.1678670590711038,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1017_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1017",
+        "family_id": "layout_1017",
+        "split": "train",
+        "seed": 1017,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "06499f5d734540342e0aa699ce2d94e25408eb732f67eb1534397ea3296570a9"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2510110525861657,
+            4.731997810450721,
+            2.0
+          ],
+          [
+            0.33080557445397085,
+            -0.06973521291684731,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            0.4,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            -2.235734118142208,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            1.4642658818577918,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            -3.1678670590711038,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1017_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1017",
+        "family_id": "layout_1017",
+        "split": "train",
+        "seed": 1017,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "06499f5d734540342e0aa699ce2d94e25408eb732f67eb1534397ea3296570a9"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2510110525861657,
+            4.731997810450721,
+            2.0
+          ],
+          [
+            0.33080557445397085,
+            -0.06973521291684731,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            0.4,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            -2.235734118142208,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0500366204006268,
+            1.4642658818577918,
+            2.0
+          ],
+          [
+            1.4813294109473671,
+            -3.1678670590711038,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1018_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1018",
+        "family_id": "layout_1018",
+        "split": "train",
+        "seed": 1018,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "ffacfda1a69a3aa520e0622b8b1a016c5e1c33ea39f07ec552842b8f08bd0c9b"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0563852695132137,
+            4.182438613542663,
+            2.0
+          ],
+          [
+            0.26005972142711853,
+            0.2200718712840548,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1018_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1018",
+        "family_id": "layout_1018",
+        "split": "train",
+        "seed": 1018,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "ffacfda1a69a3aa520e0622b8b1a016c5e1c33ea39f07ec552842b8f08bd0c9b"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0563852695132137,
+            4.182438613542663,
+            2.0
+          ],
+          [
+            0.26005972142711853,
+            0.2200718712840548,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1018_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1018",
+        "family_id": "layout_1018",
+        "split": "train",
+        "seed": 1018,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "ffacfda1a69a3aa520e0622b8b1a016c5e1c33ea39f07ec552842b8f08bd0c9b"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0563852695132137,
+            4.182438613542663,
+            2.0
+          ],
+          [
+            0.26005972142711853,
+            -0.2200718712840548,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1018_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1018",
+        "family_id": "layout_1018",
+        "split": "train",
+        "seed": 1018,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "ffacfda1a69a3aa520e0622b8b1a016c5e1c33ea39f07ec552842b8f08bd0c9b"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0563852695132137,
+            4.182438613542663,
+            2.0
+          ],
+          [
+            0.26005972142711853,
+            -0.2200718712840548,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1019_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1019",
+        "family_id": "layout_1019",
+        "split": "train",
+        "seed": 1019,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "293377d6851406862a49a15273e67fae37d85a674371bfdc3e948f41a4b9503a"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8301561151639549,
+            4.093992571840585,
+            2.0
+          ],
+          [
+            -0.023181085024383485,
+            0.23012636350650006,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2229190734862727,
+            0.4,
+            2.0
+          ],
+          [
+            1.0033565093007304,
+            2.0771226494267925,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1019_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1019",
+        "family_id": "layout_1019",
+        "split": "train",
+        "seed": 1019,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "293377d6851406862a49a15273e67fae37d85a674371bfdc3e948f41a4b9503a"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8301561151639549,
+            4.093992571840585,
+            2.0
+          ],
+          [
+            -0.023181085024383485,
+            0.23012636350650006,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2229190734862727,
+            0.4,
+            2.0
+          ],
+          [
+            1.0033565093007304,
+            2.0771226494267925,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1019_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1019",
+        "family_id": "layout_1019",
+        "split": "train",
+        "seed": 1019,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "293377d6851406862a49a15273e67fae37d85a674371bfdc3e948f41a4b9503a"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8301561151639549,
+            4.093992571840585,
+            2.0
+          ],
+          [
+            -0.023181085024383485,
+            -0.23012636350650006,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2229190734862727,
+            0.4,
+            2.0
+          ],
+          [
+            1.0033565093007304,
+            -2.0771226494267925,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1019_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1019",
+        "family_id": "layout_1019",
+        "split": "train",
+        "seed": 1019,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "293377d6851406862a49a15273e67fae37d85a674371bfdc3e948f41a4b9503a"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8301561151639549,
+            4.093992571840585,
+            2.0
+          ],
+          [
+            -0.023181085024383485,
+            -0.23012636350650006,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2229190734862727,
+            0.4,
+            2.0
+          ],
+          [
+            1.0033565093007304,
+            -2.0771226494267925,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1020_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1020",
+        "family_id": "layout_1020",
+        "split": "train",
+        "seed": 1020,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "a9502d6e4df62ad489591bc19ac796f4b16ccd22558e7a54a9adc6b6ada628b9"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0472201457975165,
+            3.9255129219323024,
+            2.0
+          ],
+          [
+            -0.2970150551862779,
+            0.14487691995399404,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            0.4,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            1.9076333809201451,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            1.7923666190798548,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            3.0038166904600727,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1020_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1020",
+        "family_id": "layout_1020",
+        "split": "train",
+        "seed": 1020,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "a9502d6e4df62ad489591bc19ac796f4b16ccd22558e7a54a9adc6b6ada628b9"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0472201457975165,
+            3.9255129219323024,
+            2.0
+          ],
+          [
+            -0.2970150551862779,
+            0.14487691995399404,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            0.4,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            1.9076333809201451,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            1.7923666190798548,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            3.0038166904600727,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1020_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1020",
+        "family_id": "layout_1020",
+        "split": "train",
+        "seed": 1020,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "a9502d6e4df62ad489591bc19ac796f4b16ccd22558e7a54a9adc6b6ada628b9"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0472201457975165,
+            3.9255129219323024,
+            2.0
+          ],
+          [
+            -0.2970150551862779,
+            -0.14487691995399404,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            0.4,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            -1.9076333809201451,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            1.7923666190798548,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            -3.0038166904600727,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1020_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1020",
+        "family_id": "layout_1020",
+        "split": "train",
+        "seed": 1020,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "a9502d6e4df62ad489591bc19ac796f4b16ccd22558e7a54a9adc6b6ada628b9"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0472201457975165,
+            3.9255129219323024,
+            2.0
+          ],
+          [
+            -0.2970150551862779,
+            -0.14487691995399404,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            0.4,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            -1.9076333809201451,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0604708703799635,
+            1.7923666190798548,
+            2.0
+          ],
+          [
+            0.7568304529024621,
+            -3.0038166904600727,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1021_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1021",
+        "family_id": "layout_1021",
+        "split": "train",
+        "seed": 1021,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9d13400c865b7c98493e491e945cc4b16895cc9fea5796cbc7b27f7a90c7cbd0"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9246328855174738,
+            3.6212771190835125,
+            1.3
+          ],
+          [
+            0.34402436294921723,
+            -0.27097205332967145,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1021_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1021",
+        "family_id": "layout_1021",
+        "split": "train",
+        "seed": 1021,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9d13400c865b7c98493e491e945cc4b16895cc9fea5796cbc7b27f7a90c7cbd0"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9246328855174738,
+            3.6212771190835125,
+            1.3
+          ],
+          [
+            0.34402436294921723,
+            -0.27097205332967145,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1021_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1021",
+        "family_id": "layout_1021",
+        "split": "train",
+        "seed": 1021,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9d13400c865b7c98493e491e945cc4b16895cc9fea5796cbc7b27f7a90c7cbd0"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9246328855174738,
+            3.6212771190835125,
+            1.3
+          ],
+          [
+            0.34402436294921723,
+            0.27097205332967145,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1021_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1021",
+        "family_id": "layout_1021",
+        "split": "train",
+        "seed": 1021,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "9d13400c865b7c98493e491e945cc4b16895cc9fea5796cbc7b27f7a90c7cbd0"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9246328855174738,
+            3.6212771190835125,
+            1.3
+          ],
+          [
+            0.34402436294921723,
+            0.27097205332967145,
+            0.65
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1022_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1022",
+        "family_id": "layout_1022",
+        "split": "train",
+        "seed": 1022,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "cebc10e1caace7af7541f8b3c77c03e0c9bb3df4afa932cc37408a8281976ddd"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7003159872545895,
+            4.877625134084372,
+            2.0
+          ],
+          [
+            0.06287010784565572,
+            0.10224689039367074,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2455552086526236,
+            0.4,
+            2.0
+          ],
+          [
+            1.0358057057992622,
+            2.3410594574358567,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1022_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1022",
+        "family_id": "layout_1022",
+        "split": "train",
+        "seed": 1022,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "cebc10e1caace7af7541f8b3c77c03e0c9bb3df4afa932cc37408a8281976ddd"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7003159872545895,
+            4.877625134084372,
+            2.0
+          ],
+          [
+            0.06287010784565572,
+            0.10224689039367074,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2455552086526236,
+            0.4,
+            2.0
+          ],
+          [
+            1.0358057057992622,
+            2.3410594574358567,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1022_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1022",
+        "family_id": "layout_1022",
+        "split": "train",
+        "seed": 1022,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "cebc10e1caace7af7541f8b3c77c03e0c9bb3df4afa932cc37408a8281976ddd"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.7003159872545895,
+            4.877625134084372,
+            2.0
+          ],
+          [
+            0.06287010784565572,
+            -0.10224689039367074,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2455552086526236,
+            0.4,
+            2.0
+          ],
+          [
+            1.0358057057992622,
+            -2.3410594574358567,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1022_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1022",
+        "family_id": "layout_1022",
+        "split": "train",
+        "seed": 1022,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "cebc10e1caace7af7541f8b3c77c03e0c9bb3df4afa932cc37408a8281976ddd"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.7003159872545895,
+            4.877625134084372,
+            2.0
+          ],
+          [
+            0.06287010784565572,
+            -0.10224689039367074,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.2455552086526236,
+            0.4,
+            2.0
+          ],
+          [
+            1.0358057057992622,
+            -2.3410594574358567,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1023_myP_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1023",
+        "family_id": "layout_1023",
+        "split": "train",
+        "seed": 1023,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "a31904337392844ab6fcd1b828c32fe14a925931335c48f501b6f594c22fc751"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9033214480051157,
+            4.858848102624015,
+            2.0
+          ],
+          [
+            0.28672136581925367,
+            0.17305636754655696,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            0.4,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            2.4024804188585644,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            1.2975195811414353,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            3.251240209429282,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1023_myP_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1023",
+        "family_id": "layout_1023",
+        "split": "train",
+        "seed": 1023,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "a31904337392844ab6fcd1b828c32fe14a925931335c48f501b6f594c22fc751"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9033214480051157,
+            4.858848102624015,
+            2.0
+          ],
+          [
+            0.28672136581925367,
+            0.17305636754655696,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            0.4,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            2.4024804188585644,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            1.2975195811414353,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            3.251240209429282,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1023_myM_LR",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1023",
+        "family_id": "layout_1023",
+        "split": "train",
+        "seed": 1023,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "a31904337392844ab6fcd1b828c32fe14a925931335c48f501b6f594c22fc751"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9033214480051157,
+            4.858848102624015,
+            2.0
+          ],
+          [
+            0.28672136581925367,
+            -0.17305636754655696,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            0.4,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            -2.4024804188585644,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            1.2975195811414353,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            -3.251240209429282,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "train_layout_1023_myM_RL",
+      "split": "train",
+      "source_spec": {
+        "name": "train_layout_1023",
+        "family_id": "layout_1023",
+        "split": "train",
+        "seed": 1023,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "a31904337392844ab6fcd1b828c32fe14a925931335c48f501b6f594c22fc751"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9033214480051157,
+            4.858848102624015,
+            2.0
+          ],
+          [
+            0.28672136581925367,
+            -0.17305636754655696,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            0.4,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            -2.4024804188585644,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.9605819341984231,
+            1.2975195811414353,
+            2.0
+          ],
+          [
+            1.2186730569210231,
+            -3.251240209429282,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2000_myP_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2000",
+        "family_id": "layout_2000",
+        "split": "validation",
+        "seed": 2000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "390a7ae2e7b369407eb37b23d9b955f3c7d49bc2644f3b48989369e3a4be0d5e"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0450817913145818,
+            4.4846369139393305,
+            0.8
+          ],
+          [
+            -0.33107360724252655,
+            0.004590060033123955,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2000_myP_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2000",
+        "family_id": "layout_2000",
+        "split": "validation",
+        "seed": 2000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "390a7ae2e7b369407eb37b23d9b955f3c7d49bc2644f3b48989369e3a4be0d5e"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0450817913145818,
+            4.4846369139393305,
+            0.8
+          ],
+          [
+            -0.33107360724252655,
+            0.004590060033123955,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2000_myM_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2000",
+        "family_id": "layout_2000",
+        "split": "validation",
+        "seed": 2000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "390a7ae2e7b369407eb37b23d9b955f3c7d49bc2644f3b48989369e3a4be0d5e"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.0450817913145818,
+            4.4846369139393305,
+            0.8
+          ],
+          [
+            -0.33107360724252655,
+            -0.004590060033123955,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2000_myM_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2000",
+        "family_id": "layout_2000",
+        "split": "validation",
+        "seed": 2000,
+        "kind": "barrier",
+        "source_method": "Optimistic",
+        "geometry_hash": "390a7ae2e7b369407eb37b23d9b955f3c7d49bc2644f3b48989369e3a4be0d5e"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.0450817913145818,
+            4.4846369139393305,
+            0.8
+          ],
+          [
+            -0.33107360724252655,
+            -0.004590060033123955,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2001_myP_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2001",
+        "family_id": "layout_2001",
+        "split": "validation",
+        "seed": 2001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "76f895e29891f05a87dcd7b629b7e797250e66a801eea6a942ba0d96034f15ba"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9542018814972145,
+            3.805586771418778,
+            2.0
+          ],
+          [
+            -0.017429821347810015,
+            0.3235039153871092,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.002432200270654,
+            0.4,
+            2.0
+          ],
+          [
+            0.9608872195361242,
+            2.026297301096498,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2001_myP_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2001",
+        "family_id": "layout_2001",
+        "split": "validation",
+        "seed": 2001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "76f895e29891f05a87dcd7b629b7e797250e66a801eea6a942ba0d96034f15ba"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9542018814972145,
+            3.805586771418778,
+            2.0
+          ],
+          [
+            -0.017429821347810015,
+            0.3235039153871092,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.002432200270654,
+            0.4,
+            2.0
+          ],
+          [
+            0.9608872195361242,
+            2.026297301096498,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2001_myM_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2001",
+        "family_id": "layout_2001",
+        "split": "validation",
+        "seed": 2001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "76f895e29891f05a87dcd7b629b7e797250e66a801eea6a942ba0d96034f15ba"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.9542018814972145,
+            3.805586771418778,
+            2.0
+          ],
+          [
+            -0.017429821347810015,
+            -0.3235039153871092,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.002432200270654,
+            0.4,
+            2.0
+          ],
+          [
+            0.9608872195361242,
+            -2.026297301096498,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2001_myM_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2001",
+        "family_id": "layout_2001",
+        "split": "validation",
+        "seed": 2001,
+        "kind": "gate_open",
+        "source_method": "Conservative",
+        "geometry_hash": "76f895e29891f05a87dcd7b629b7e797250e66a801eea6a942ba0d96034f15ba"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.9542018814972145,
+            3.805586771418778,
+            2.0
+          ],
+          [
+            -0.017429821347810015,
+            -0.3235039153871092,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.002432200270654,
+            0.4,
+            2.0
+          ],
+          [
+            0.9608872195361242,
+            -2.026297301096498,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2002_myP_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2002",
+        "family_id": "layout_2002",
+        "split": "validation",
+        "seed": 2002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "6d50e29732cb8975fec474b7b805ef0d025086a07241a37e94185d1d60c685a4"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2332556144118108,
+            4.941066841295863,
+            2.0
+          ],
+          [
+            0.11067882795979223,
+            -0.2441204530133207,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            0.4,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            2.0264129676346108,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            1.673587032365389,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            3.0632064838173054,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2002_myP_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2002",
+        "family_id": "layout_2002",
+        "split": "validation",
+        "seed": 2002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "6d50e29732cb8975fec474b7b805ef0d025086a07241a37e94185d1d60c685a4"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2332556144118108,
+            4.941066841295863,
+            2.0
+          ],
+          [
+            0.11067882795979223,
+            -0.2441204530133207,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            0.4,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            2.0264129676346108,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            1.673587032365389,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            3.0632064838173054,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2002_myM_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2002",
+        "family_id": "layout_2002",
+        "split": "validation",
+        "seed": 2002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "6d50e29732cb8975fec474b7b805ef0d025086a07241a37e94185d1d60c685a4"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.2332556144118108,
+            4.941066841295863,
+            2.0
+          ],
+          [
+            0.11067882795979223,
+            0.2441204530133207,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            0.4,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            -2.0264129676346108,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            1.673587032365389,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            -3.0632064838173054,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2002_myM_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2002",
+        "family_id": "layout_2002",
+        "split": "validation",
+        "seed": 2002,
+        "kind": "gate_closed",
+        "source_method": "Optimistic",
+        "geometry_hash": "6d50e29732cb8975fec474b7b805ef0d025086a07241a37e94185d1d60c685a4"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.2332556144118108,
+            4.941066841295863,
+            2.0
+          ],
+          [
+            0.11067882795979223,
+            0.2441204530133207,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            0.4,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            -2.0264129676346108,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.891273488492286,
+            1.673587032365389,
+            2.0
+          ],
+          [
+            1.1729433794118407,
+            -3.0632064838173054,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2003_myP_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2003",
+        "family_id": "layout_2003",
+        "split": "validation",
+        "seed": 2003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "f6b3b018c0e1ad99ced45f7ec8ef97f1f521d0d0d981b773623de021bcd693d9"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8767778497370993,
+            4.821738383132248,
+            0.8
+          ],
+          [
+            0.10594204813217001,
+            0.3488900643058154,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2003_myP_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2003",
+        "family_id": "layout_2003",
+        "split": "validation",
+        "seed": 2003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "f6b3b018c0e1ad99ced45f7ec8ef97f1f521d0d0d981b773623de021bcd693d9"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8767778497370993,
+            4.821738383132248,
+            0.8
+          ],
+          [
+            0.10594204813217001,
+            0.3488900643058154,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2003_myM_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2003",
+        "family_id": "layout_2003",
+        "split": "validation",
+        "seed": 2003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "f6b3b018c0e1ad99ced45f7ec8ef97f1f521d0d0d981b773623de021bcd693d9"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            0.8767778497370993,
+            4.821738383132248,
+            0.8
+          ],
+          [
+            0.10594204813217001,
+            -0.3488900643058154,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2003_myM_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2003",
+        "family_id": "layout_2003",
+        "split": "validation",
+        "seed": 2003,
+        "kind": "barrier",
+        "source_method": "Conservative",
+        "geometry_hash": "f6b3b018c0e1ad99ced45f7ec8ef97f1f521d0d0d981b773623de021bcd693d9"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            0.8767778497370993,
+            4.821738383132248,
+            0.8
+          ],
+          [
+            0.10594204813217001,
+            -0.3488900643058154,
+            0.4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2004_myP_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2004",
+        "family_id": "layout_2004",
+        "split": "validation",
+        "seed": 2004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "c5b9ab35259fa64afae22bff9b1b9356fa01ed03b8ac793c82762f68b03f65e3"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.084121809905898,
+            3.9363594184959037,
+            2.0
+          ],
+          [
+            0.2913910117541021,
+            0.11395127840193375,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8316404023211856,
+            0.4,
+            2.0
+          ],
+          [
+            1.249272117867644,
+            1.8821309876498857,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2004_myP_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2004",
+        "family_id": "layout_2004",
+        "split": "validation",
+        "seed": 2004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "c5b9ab35259fa64afae22bff9b1b9356fa01ed03b8ac793c82762f68b03f65e3"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.084121809905898,
+            3.9363594184959037,
+            2.0
+          ],
+          [
+            0.2913910117541021,
+            0.11395127840193375,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8316404023211856,
+            0.4,
+            2.0
+          ],
+          [
+            1.249272117867644,
+            1.8821309876498857,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2004_myM_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2004",
+        "family_id": "layout_2004",
+        "split": "validation",
+        "seed": 2004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "c5b9ab35259fa64afae22bff9b1b9356fa01ed03b8ac793c82762f68b03f65e3"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.084121809905898,
+            3.9363594184959037,
+            2.0
+          ],
+          [
+            0.2913910117541021,
+            -0.11395127840193375,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8316404023211856,
+            0.4,
+            2.0
+          ],
+          [
+            1.249272117867644,
+            -1.8821309876498857,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2004_myM_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2004",
+        "family_id": "layout_2004",
+        "split": "validation",
+        "seed": 2004,
+        "kind": "gate_open",
+        "source_method": "Optimistic",
+        "geometry_hash": "c5b9ab35259fa64afae22bff9b1b9356fa01ed03b8ac793c82762f68b03f65e3"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.084121809905898,
+            3.9363594184959037,
+            2.0
+          ],
+          [
+            0.2913910117541021,
+            -0.11395127840193375,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.8316404023211856,
+            0.4,
+            2.0
+          ],
+          [
+            1.249272117867644,
+            -1.8821309876498857,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2005_myP_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2005",
+        "family_id": "layout_2005",
+        "split": "validation",
+        "seed": 2005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "f396970c6edd447f6799b4c1814f0f8d9610e4da19facc0fa2f0e2928b14f484"
+      },
+      "mirror_y": 1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.1306482013283685,
+            4.225806346706788,
+            2.0
+          ],
+          [
+            0.2135538760757706,
+            0.2780844571896156,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            0.4,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            2.1909876305430096,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            1.5090123694569901,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            3.1454938152715046,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2005_myP_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2005",
+        "family_id": "layout_2005",
+        "split": "validation",
+        "seed": 2005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "f396970c6edd447f6799b4c1814f0f8d9610e4da19facc0fa2f0e2928b14f484"
+      },
+      "mirror_y": 1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.1306482013283685,
+            4.225806346706788,
+            2.0
+          ],
+          [
+            0.2135538760757706,
+            0.2780844571896156,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            0.4,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            2.1909876305430096,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            1.5090123694569901,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            3.1454938152715046,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2005_myM_LR",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2005",
+        "family_id": "layout_2005",
+        "split": "validation",
+        "seed": 2005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "f396970c6edd447f6799b4c1814f0f8d9610e4da19facc0fa2f0e2928b14f484"
+      },
+      "mirror_y": -1,
+      "travel_direction": 1,
+      "start_xy": [
+        -3.5,
+        0.0
+      ],
+      "goal_xy": [
+        3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 0.0,
+      "geometry": [
+        [
+          [
+            1.1306482013283685,
+            4.225806346706788,
+            2.0
+          ],
+          [
+            0.2135538760757706,
+            -0.2780844571896156,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            0.4,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            -2.1909876305430096,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            1.5090123694569901,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            -3.1454938152715046,
+            1.0
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "validation_layout_2005_myM_RL",
+      "split": "validation",
+      "source_spec": {
+        "name": "validation_layout_2005",
+        "family_id": "layout_2005",
+        "split": "validation",
+        "seed": 2005,
+        "kind": "gate_closed",
+        "source_method": "Conservative",
+        "geometry_hash": "f396970c6edd447f6799b4c1814f0f8d9610e4da19facc0fa2f0e2928b14f484"
+      },
+      "mirror_y": -1,
+      "travel_direction": -1,
+      "start_xy": [
+        3.5,
+        0.0
+      ],
+      "goal_xy": [
+        -3.5,
+        0.0
+      ],
+      "initial_yaw_rad": 3.141592653589793,
+      "geometry": [
+        [
+          [
+            1.1306482013283685,
+            4.225806346706788,
+            2.0
+          ],
+          [
+            0.2135538760757706,
+            -0.2780844571896156,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            0.4,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            -2.1909876305430096,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.1550148899679493,
+            1.5090123694569901,
+            2.0
+          ],
+          [
+            1.3563854217239295,
+            -3.1454938152715046,
+            1.0
+          ]
+        ]
+      ]
+    }
+  ],
+  "runner_sha256": "efc7784d3083f5536a51db6286b554da533df0053a3ae83e6b97e251017c3679",
+  "continuation": "PostTurnReplan_from_episode_start",
+  "sampling": "first_and_one_third_and_two_thirds_of_eligible_decisions",
+  "eligibility": "goal_path_length_at_least_two_and_route_relevant_unknown",
+  "offsets_deg": [
+    -45,
+    45
+  ],
+  "max_optional_views": 1,
+  "no_view_value_s": 0.0,
+  "split_group": "source_spec.name",
+  "label": "baseline_total_sim_time_minus_one_view_total_sim_time",
+  "max_sim_time": 180.0,
+  "max_decisions": 300
+}

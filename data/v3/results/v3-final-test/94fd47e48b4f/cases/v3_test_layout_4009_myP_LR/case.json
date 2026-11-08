@@ -1,0 +1,35 @@
+{
+  "name": "v3_test_layout_4009_myP_LR",
+  "split": "test",
+  "source_group": "v3_test_layout_4009",
+  "source_spec": {
+    "name": "v3_test_layout_4009",
+    "seed": 4009,
+    "kind": "barrier"
+  },
+  "mirror_y": 1,
+  "travel_direction": 1,
+  "start_xy": [
+    -3.5,
+    0.0
+  ],
+  "goal_xy": [
+    3.5,
+    0.0
+  ],
+  "initial_yaw_rad": 0.0,
+  "geometry": [
+    [
+      [
+        0.9090991696494197,
+        4.088686565930556,
+        2.0
+      ],
+      [
+        -0.3181956716752848,
+        -0.029344296430916572,
+        1.0
+      ]
+    ]
+  ]
+}

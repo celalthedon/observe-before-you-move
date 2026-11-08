@@ -1,0 +1,13 @@
+{
+  "freeze_id": "94fd47e48b4f",
+  "eligible": true,
+  "state_index": 0,
+  "file_hashes": {
+    "case.json": "fd915ca8fd39caf89ddd1549d1352ea7285eb3e41bc065744a2a5238d0569a5f",
+    "baseline.npz": "5cb16e487599088c51f22235059d0c5b4ddf3e5e84653bc0dec7da800f18c5fd",
+    "NoView.json": "4e21b15b7216e49b788743d6daa14ac6ae962c3374ed491aee674d4258221b53",
+    "FixedMinus45.json": "049e23f045c0aad63d393f487d998dc0721b120fa8998998d566cd117c6bfce4",
+    "FixedPlus45.json": "fbc7c23cf61886f881b94caa9d5e0294da0de0272736c8aaff47d66ff203cea1",
+    "input.npz": "f5aea037133563a4d1a2613235ce95aa4e8848b2692c2e606c759c3ea445b51b"
+  }
+}

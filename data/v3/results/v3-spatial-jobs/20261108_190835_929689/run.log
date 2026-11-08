@@ -1,0 +1,16 @@
+TRAIN CV | 24 source groups | 6 folds
+Validation parametr seçimində istifadə edilmir.
+OOF | PoseRidgeCV | gain=+0.812 s | regret=2.989 s | level=0 | alpha=1000.0 | threshold=0.15
+OOF | MeanMapRidgeCV | gain=+0.812 s | regret=2.989 s | level=1 | alpha=1000.0 | threshold=0.0
+OOF | SpatialRidgeCV | gain=+1.668 s | regret=2.133 s | level=4 | alpha=100.0 | threshold=0.0
+VAL | NoView             | gain=+0.000 s | regret=4.304 s | harmful=0 | looks=0
+VAL | FixedMinus45       | gain=+0.753 s | regret=3.551 s | harmful=14 | looks=24
+VAL | FixedPlus45        | gain=+1.125 s | regret=3.179 s | harmful=9 | looks=24
+VAL | PoseRidgeCV        | gain=+1.089 s | regret=3.216 s | harmful=12 | looks=24
+VAL | MeanMapRidgeCV     | gain=+1.089 s | regret=3.216 s | harmful=12 | looks=24
+VAL | SpatialRidgeCV     | gain=+2.433 s | regret=1.871 s | harmful=7 | looks=19
+VAL | CNN_MSE            | gain=+0.653 s | regret=3.652 s | harmful=4 | looks=14
+VAL | CNN_MSE_Rank       | gain=+0.653 s | regret=3.652 s | harmful=4 | looks=14
+VAL | PoseRidge          | gain=+1.089 s | regret=3.216 s | harmful=12 | looks=24
+VAL | MapRidge           | gain=+0.913 s | regret=3.392 s | harmful=9 | looks=19
+SPATIAL COMPARISON READY | C:\Users\celal\obym-github\results\v3-spatial-ridge\20261108_190836_472908
